@@ -1,4 +1,5 @@
 import 'package:cooking/core/config/config.dart';
+import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/core/widgets/app_logo_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -9,14 +10,10 @@ class LogoAndTitleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
-    final spToPx = MediaQuery.of(context).devicePixelRatio;
-    print(spToPx);
-    print('hello');
     return Column(
       children: [
         AppLogoWidget(),
-        SizedBox(height: screenHeight / 67.666667),
+        SizedBox(height: screenH(context) / 67.666667),
         Text(
           'اكتشف افضل وصفات الطعام',
           style: TextStyles.logoTitle,
