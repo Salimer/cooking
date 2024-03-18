@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 const MaterialColor green = MaterialColor(
   0xff15be77,
   <int, Color>{
@@ -27,6 +28,8 @@ const MaterialColor orange = MaterialColor(
   },
 );
 
-// TextStyle(
-//   color: primaryColor[500];
-// )
+class Natural {
+  static const Color grey1 = Color(0xff49465f);
+  static const Color grey2 = Color(0xff858494);
+  static const Color grey3 = Color(0xffdcdcdc);
+}
