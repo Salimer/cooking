@@ -14,14 +14,14 @@ class AuthBottomActionWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ShaderMask(
-            shaderCallback: (bounds) => LinearGradient(colors: [
-              green[100]!,
-              green[500]!
-            ]).createShader(bounds),
+            shaderCallback: (bounds) =>
+                LinearGradient(colors: [green[100]!, green[500]!])
+                    .createShader(bounds),
             child: TextButton(
               onPressed: () {},
-              child:
-                  const Text('تسجيل الدخول', style: TextStyles.authTextButton),
+              child: Text('تسجيل الدخول',
+                  style:
+                      TextStyles.authBottomText.copyWith(color: Colors.white)),
             ),
           ),
           const Text('هل لديك حساب؟', style: TextStyles.authBottomText),
