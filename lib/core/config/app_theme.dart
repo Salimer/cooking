@@ -9,12 +9,9 @@ class AppTheme {
   static ThemeData _lightTheme() {
     final theme = ThemeData.light();
     return theme.copyWith(
-      textTheme: theme.textTheme
-          .copyWith(
-            bodySmall: const TextStyle(),
-          )
-          .apply(fontFamily: FontFamily.dINNextLTW23Bold),
-      outlinedButtonTheme: OutlinedButtonThemeData(),
+      textTheme: theme.textTheme.apply(
+        fontFamily: FontFamily.dINNextLTW23,
+      ),
     );
   }
 
@@ -25,32 +22,25 @@ class AppTheme {
 }
 
 class TextStyles {
-  static const double _fontSize = 20;
+  static const double _logoTexFontSize = 20;
   static const double _buttonFontSize = 16;
-  static const TextStyle authTextButton = TextStyle(
-    color: Colors.white,
-    fontSize: _fontSize,
-  );
+  static const double _authBottomTextFontSize = 14;
 
   static const TextStyle authBottomText = TextStyle(
-    fontSize: _fontSize,
+    fontSize: _authBottomTextFontSize,
+    color: Natural.grey2,
+    fontWeight: FontWeight.w400
   );
 
-  static final TextStyle logoTitle = TextStyle(
-    color: red[500],
-    fontSize: 20,
-  );
+  static TextStyle logoTitle = TextStyle(
+      color: red[500], fontSize: _logoTexFontSize, fontWeight: FontWeight.bold);
 
   static const TextStyle greenButton = TextStyle(
     color: Colors.white,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.bold,
     fontSize: _buttonFontSize,
-    
   );
 
   static final TextStyle transButton = TextStyle(
-    fontSize: _buttonFontSize,
-    color: red[500]!,
-    fontWeight: FontWeight.w400
-  );
+      fontSize: _buttonFontSize, color: red[500]!, fontWeight: FontWeight.w400);
 }
