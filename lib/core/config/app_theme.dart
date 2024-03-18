@@ -27,10 +27,9 @@ class TextStyles {
   static const double _authBottomTextFontSize = 14;
 
   static const TextStyle authBottomText = TextStyle(
-    fontSize: _authBottomTextFontSize,
-    color: Natural.grey2,
-    fontWeight: FontWeight.w400
-  );
+      fontSize: _authBottomTextFontSize,
+      color: Natural.grey2,
+      fontWeight: FontWeight.w400);
 
   static TextStyle logoTitle = TextStyle(
       color: red[500], fontSize: _logoTexFontSize, fontWeight: FontWeight.bold);
@@ -42,5 +41,10 @@ class TextStyles {
   );
 
   static final TextStyle transButton = TextStyle(
-      fontSize: _buttonFontSize, color: red[500]!, fontWeight: FontWeight.w400);
+    fontSize: _buttonFontSize,
+    color: red[500]!,
+    fontWeight: FontWeight.w400,
+  );
+
+  static final TextStyle placeholder = TextStyle(color: Natural.grey2);
 }
