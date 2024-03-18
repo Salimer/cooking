@@ -1,4 +1,5 @@
 import 'package:cooking/core/config/app_theme.dart';
+import 'package:cooking/features/auth/presentation/views/login_view.dart';
 import 'package:cooking/features/auth/presentation/views/onboarding_view.dart';
 import 'package:cooking/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
-      home: OnboardingView()
+      home: LoginView()
     );
   }
 }
