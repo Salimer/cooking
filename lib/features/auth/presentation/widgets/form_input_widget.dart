@@ -71,7 +71,7 @@ class FormInputIcon extends StatelessWidget {
     return SvgPicture.asset(
       iconName,
       semanticsLabel: 'Email input icon',
-      width: 30,
+      width: 25,
     );
   }
 }
