@@ -49,5 +49,10 @@ class TextStyles {
   static const TextStyle rememberMe =
       TextStyle(fontSize: 14, color: Neutral.black);
 
+  static const TextStyle resetPasswordBody = TextStyle(
+    color: Neutral.grey2,
+    fontSize: 14,
+  );
+
   static final TextStyle placeholder = TextStyle(color: Neutral.grey2);
 }
