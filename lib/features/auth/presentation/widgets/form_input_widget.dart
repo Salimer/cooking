@@ -1,41 +1,46 @@
 import 'package:cooking/core/config/app_theme.dart';
 import 'package:cooking/core/constants/constants.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:cooking/gen/assets.gen.dart';
 
 class FormInputWidget extends StatelessWidget {
-  const FormInputWidget({
-    super.key,
-  });
+  final String placeholder;
+  final String iconName;
+  const FormInputWidget(
+      {super.key, required this.placeholder, required this.iconName});
 
   @override
   Widget build(BuildContext context) {
+    const double prefixIconGap = 13;
     return TextFormField(
       key: const ValueKey('emailInput'),
       keyboardType: TextInputType.emailAddress,
       autocorrect: false,
       decoration: InputDecoration(
-        labelText: 'البريد الالكتروني',
+        labelText: placeholder,
         labelStyle: TextStyles.placeholder,
-        prefixIcon: Padding(
-          padding: const EdgeInsets.symmetric( horizontal: 10),
-          child: Container(
-            padding: EdgeInsets.symmetric( horizontal: 10),
-            decoration: BoxDecoration(
-              border: Border(
-                left: BorderSide(
-                  width: 1,
-                  
-                )
-              )
+        prefixIcon: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(width: prefixIconGap + 5),
+            FormInputIcon(
+              iconName: iconName,
             ),
-            child: SvgPicture.asset(
-              Assets.icons.emailInput,
-              semanticsLabel: 'Email input icon',
-              width: 50
+            SizedBox(width: prefixIconGap),
+            SizedBox(
+              height: 20,
+              child: VerticalDivider(
+                width: 5,
+                color: Neutral.grey4,
+                thickness: 1,
               ),
-          ),
+            ),
+            SizedBox(width: prefixIconGap)
+          ],
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
@@ -43,7 +48,7 @@ class FormInputWidget extends StatelessWidget {
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(width: 2, color: Natural.grey4),
+          borderSide: BorderSide(width: 2, color: Neutral.grey4),
         ),
       ),
       validator: (value) {
@@ -53,6 +58,20 @@ class FormInputWidget extends StatelessWidget {
         return null;
       },
       onSaved: (newValue) {},
+    );
+  }
+}
+
+class FormInputIcon extends StatelessWidget {
+  final String iconName;
+  const FormInputIcon({super.key, required this.iconName});
+
+  @override
+  Widget build(BuildContext context) {
+    return SvgPicture.asset(
+      iconName,
+      semanticsLabel: 'Email input icon',
+      width: 30,
     );
   }
 }
