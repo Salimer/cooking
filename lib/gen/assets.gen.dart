@@ -21,8 +21,11 @@ class $AssetsIconsGen {
   /// File path: assets/icons/passwordInput.svg
   String get passwordInput => 'assets/icons/passwordInput.svg';
 
+  /// File path: assets/icons/userInput.svg
+  String get userInput => 'assets/icons/userInput.svg';
+
   /// List of all assets
-  List<String> get values => [emailInput, logo, passwordInput];
+  List<String> get values => [emailInput, logo, passwordInput, userInput];
 }
 
 class $AssetsImagesGen {
