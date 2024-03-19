@@ -3,7 +3,6 @@ import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking/gen/assets.gen.dart';
-import 'package:flutter/widgets.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
