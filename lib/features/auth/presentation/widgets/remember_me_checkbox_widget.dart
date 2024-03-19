@@ -19,7 +19,8 @@ class _RememberMeCheckboxWidgetState extends State<RememberMeCheckboxWidget> {
   Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start, // Control the width of the row
+      crossAxisAlignment:
+          CrossAxisAlignment.start, // Control the width of the row
       children: [
         CustomCheckboxWidget(
           value: rememberMe,
