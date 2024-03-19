@@ -16,15 +16,13 @@ class OnboardingView extends StatelessWidget {
             child: Directionality(
               textDirection: TextDirection.rtl,
               child: Container(
-                
-                padding:
-                    EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
+                padding: EdgeInsets.symmetric(
+                    horizontal: authScreensPadding(context)),
                 child: Column(
                   children: [
                     SizedBox(height: screenH(context) * 0.35),
                     LogoAndTitleWidget(),
-                    SizedBox(
-                        height: screenH(context) / 12),
+                    SizedBox(height: screenH(context) / 12),
                     CustomElevatedButton(
                       borderRadius: BorderRadius.circular(24),
                       onPressed: () {},
@@ -48,8 +46,7 @@ class OnboardingView extends StatelessWidget {
                         child: Text('تخطي', style: TextStyles.transButton),
                       ),
                     ),
-                    SizedBox(
-                        height: screenH(context) / 15),
+                    SizedBox(height: screenH(context) / 15),
                     const AuthBottomActionWidget(
                       greenText: "تسجيل الدخول",
                       whiteText: "هل لديك حساب؟",
