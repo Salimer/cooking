@@ -1,3 +1,4 @@
+import 'package:cooking/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'core/config/config.dart';
 import 'features/auth/presentation/views/views.dart';
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
       theme: AppTheme.lightTheme,
       home: const Directionality(
         textDirection: TextDirection.rtl,
-        child: RegisterView(),
+        child: ResetPasswordNewPasswordView()
       ),
     );
   }
