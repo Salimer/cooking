@@ -28,9 +28,10 @@ const MaterialColor orange = MaterialColor(
   },
 );
 
-class Natural {
+class Neutral {
   static const Color grey1 = Color(0xff49465f);
   static const Color grey2 = Color(0xff858494);
   static const Color grey3 = Color(0xffdcdcdc);
   static const Color grey4 = Color(0xffe6e6e6);
+  static const Color black = Color(0xff0c092a);
 }
