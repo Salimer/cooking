@@ -4,9 +4,10 @@ import 'package:cooking/core/widgets/app_logo_widget.dart';
 import 'package:flutter/material.dart';
 
 class LogoAndTitleWidget extends StatelessWidget {
-  const LogoAndTitleWidget({
-    super.key,
-  });
+  final String bodyText;
+  final String title;
+  const LogoAndTitleWidget(
+      {super.key, this.title = 'اكتشف افضل وصفات الطعام', this.bodyText = ''});
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +16,18 @@ class LogoAndTitleWidget extends StatelessWidget {
         AppLogoWidget(),
         SizedBox(height: screenH(context) / 67.666667),
         Text(
-          'اكتشف افضل وصفات الطعام',
+          title,
           style: TextStyles.logoTitle,
         ),
+        if(bodyText.isNotEmpty)  
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+          child: Text(
+            bodyText,
+            style: TextStyles.resetPasswordBody,
+            textAlign: TextAlign.center,
+          ),
+        ) 
       ],
     );
   }
