@@ -3,7 +3,7 @@ import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking/gen/assets.gen.dart';
-
+import 'package:flutter/widgets.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -18,9 +18,7 @@ class LoginView extends StatelessWidget {
         children: [
           const AuthBackgroundWidget(),
           SingleChildScrollView(
-            child: Container(
-              width: screenW(context),
-              height: screenH(context),
+            child: Padding(
               padding:
                   EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
               child: Directionality(
@@ -28,19 +26,22 @@ class LoginView extends StatelessWidget {
                 child: Form(
                   key: _formKey,
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
+                      SizedBox(height: screenH(context) * 0.25),
                       LogoAndTitleWidget(),
+                      SizedBox(height: screenH(context) / 14),
                       FormInputWidget(
                         iconName: Assets.icons.emailInput,
                         placeholder: 'البريد اللإلكتروني',
                       ),
-                      SizedBox(height: 40),
+                      SizedBox(height: screenH(context) / 50),
                       FormInputWidget(
                           iconName: Assets.icons.passwordInput,
                           placeholder: 'كلمة المرور'),
+                      SizedBox(height: 15),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           RememberMeCheckboxWidget(),
                           GestureDetector(
@@ -50,16 +51,21 @@ class LoginView extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(height: 20),
+                      SizedBox(height: 40),
                       CustomElevatedButton(
-                    borderRadius: BorderRadius.circular(24),
-                    onPressed: () {},
-                    child: Text(
-                      'تسجيل الدخول',
-                      style: TextStyles.greenButton,
-                    ),
-                  ),
-                  AuthBottomActionWidget()
+                        borderRadius: BorderRadius.circular(24),
+                        onPressed: () {},
+                        child: Text(
+                          'تسجيل الدخول',
+                          style: TextStyles.greenButton,
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      AuthBottomActionWidget(
+                        greenText: 'إنشاء حساب',
+                        whiteText: 'لا تملك حساب؟',
+                      ),
+                      SizedBox(height: 30)
                     ],
                   ),
                 ),
