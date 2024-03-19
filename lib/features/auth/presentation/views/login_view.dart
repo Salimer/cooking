@@ -38,12 +38,14 @@ class LoginView extends StatelessWidget {
                       FormInputWidget(
                           iconName: Assets.icons.passwordInput,
                           placeholder: 'كلمة المرور'),
-                      SizedBox(height: 15),
+                      SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          RememberMeCheckboxWidget(),
+                          RememberMeCheckboxWidget(
+                              text:
+                                  Text('تذكرني', style: TextStyles.rememberMe)),
                           GestureDetector(
                             onTap: () {},
                             child: Text('نسيت كلمة المرور؟',
