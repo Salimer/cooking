@@ -20,7 +20,7 @@ class CustomElevatedButton extends StatelessWidget {
     final borderRadius = this.borderRadius ?? BorderRadius.circular(0);
     return Container(
       width: width,
-      height:  60,
+      height: 60,
       decoration: BoxDecoration(
         gradient: LinearGradient(colors: [green[100]!, green[500]!]),
         borderRadius: borderRadius,
