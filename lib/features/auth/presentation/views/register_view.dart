@@ -21,62 +21,59 @@ class RegisterView extends StatelessWidget {
             child: Padding(
               padding:
                   EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
-              child: Directionality(
-                textDirection: TextDirection.rtl,
-                child: Form(
-                  key: _formKey,
-                  child: Column(
-                    children: [
-                      SizedBox(height: screenH(context) * 0.10),
-                      LogoAndTitleWidget(),
-                      SizedBox(height: screenH(context) / 30),
-                      FormInputWidget(
-                        iconName: Assets.icons.userInput,
-                        placeholder: 'الاسم الكامل',
-                      ),
-                      SizedBox(height: screenH(context) / 50),
-                      FormInputWidget(
-                        iconName: Assets.icons.emailInput,
-                        placeholder: 'البريد اللإلكتروني',
-                      ),
-                      SizedBox(height: screenH(context) / 50),
-                      FormInputWidget(
-                          iconName: Assets.icons.passwordInput,
-                          placeholder: 'كلمة المرور'),
-                      SizedBox(height: screenH(context) / 50),
-                      FormInputWidget(
+              child: Form(
+                key: _formKey,
+                child: Column(
+                  children: [
+                    SizedBox(height: screenH(context) * 0.10),
+                    LogoAndTitleWidget(),
+                    SizedBox(height: screenH(context) / 30),
+                    FormInputWidget(
+                      iconName: Assets.icons.userInput,
+                      placeholder: 'الاسم الكامل',
+                    ),
+                    SizedBox(height: screenH(context) / 50),
+                    FormInputWidget(
+                      iconName: Assets.icons.emailInput,
+                      placeholder: 'البريد اللإلكتروني',
+                    ),
+                    SizedBox(height: screenH(context) / 50),
+                    FormInputWidget(
                         iconName: Assets.icons.passwordInput,
-                        placeholder: 'تأكيد كلمة المرور',
+                        placeholder: 'كلمة المرور'),
+                    SizedBox(height: screenH(context) / 50),
+                    FormInputWidget(
+                      iconName: Assets.icons.passwordInput,
+                      placeholder: 'تأكيد كلمة المرور',
+                    ),
+                    SizedBox(height: 15),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RememberMeCheckboxWidget(
+                            text: Text(
+                                'أوافق على شروط الاستخدام و سياسة الخصوصية',
+                                style: TextStyles.rememberMe
+                                    .copyWith(fontSize: 12))),
+                      ],
+                    ),
+                    SizedBox(height: 40),
+                    CustomElevatedButton(
+                      borderRadius: BorderRadius.circular(24),
+                      onPressed: () {},
+                      child: Text(
+                        "إنشاء حساب",
+                        style: TextStyles.greenButton,
                       ),
-                      SizedBox(height: 15),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          RememberMeCheckboxWidget(
-                              text: Text(
-                                  'أوافق على شروط الاستخدام و سياسة الخصوصية',
-                                  style: TextStyles.rememberMe
-                                      .copyWith(fontSize: 12))),
-                        ],
-                      ),
-                      SizedBox(height: 40),
-                      CustomElevatedButton(
-                        borderRadius: BorderRadius.circular(24),
-                        onPressed: () {},
-                        child: Text(
-                          "إنشاء حساب",
-                          style: TextStyles.greenButton,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      AuthBottomActionWidget(
-                        greenText: 'إنشاء حساب',
-                        whiteText: 'لا تملك حساب؟',
-                      ),
-                      SizedBox(height: 30)
-                    ],
-                  ),
+                    ),
+                    SizedBox(height: 20),
+                    AuthBottomActionWidget(
+                      greenText: 'إنشاء حساب',
+                      whiteText: 'لا تملك حساب؟',
+                    ),
+                    SizedBox(height: 30)
+                  ],
                 ),
               ),
             ),
