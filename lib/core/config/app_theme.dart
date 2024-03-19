@@ -28,7 +28,7 @@ class TextStyles {
 
   static const TextStyle authBottomText = TextStyle(
       fontSize: _authBottomTextFontSize,
-      color: Natural.grey2,
+      color: Neutral.grey2,
       fontWeight: FontWeight.w400);
 
   static TextStyle logoTitle = TextStyle(
@@ -46,5 +46,8 @@ class TextStyles {
     fontWeight: FontWeight.w400,
   );
 
-  static final TextStyle placeholder = TextStyle(color: Natural.grey2);
+  static const TextStyle rememberMe =
+      TextStyle(fontSize: 14, color: Neutral.black);
+
+  static final TextStyle placeholder = TextStyle(color: Neutral.grey2);
 }
