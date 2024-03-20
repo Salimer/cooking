@@ -41,8 +41,7 @@ class LoginView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         RememberMeCheckboxWidget(
-                            text:
-                                Text('تذكرني', style: TextStyles.rememberMe)),
+                            text: Text('تذكرني', style: TextStyles.rememberMe)),
                         GestureDetector(
                           onTap: () {},
                           child: Text('نسيت كلمة المرور؟',
