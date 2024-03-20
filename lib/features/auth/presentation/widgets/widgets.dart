@@ -5,3 +5,4 @@ export 'custom_elevated_button.dart';
 export 'form_input_widget.dart';
 export 'logo_and_title_widget.dart';
 export 'remember_me_checkbox_widget.dart';
+export 'success_popup_widget.dart';
