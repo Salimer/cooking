@@ -21,11 +21,15 @@ class $AssetsIconsGen {
   /// File path: assets/icons/passwordInput.svg
   String get passwordInput => 'assets/icons/passwordInput.svg';
 
+  /// File path: assets/icons/successPopupIcon.svg
+  String get successPopupIcon => 'assets/icons/successPopupIcon.svg';
+
   /// File path: assets/icons/userInput.svg
   String get userInput => 'assets/icons/userInput.svg';
 
   /// List of all assets
-  List<String> get values => [emailInput, logo, passwordInput, userInput];
+  List<String> get values =>
+      [emailInput, logo, passwordInput, successPopupIcon, userInput];
 }
 
 class $AssetsImagesGen {
