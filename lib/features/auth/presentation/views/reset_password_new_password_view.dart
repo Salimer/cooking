@@ -9,6 +9,15 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void _showDialog() {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return SuccessPopupWidget();
+        },
+      );
+    }
+
     bool rememberMe = false;
     final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
     String? email;
@@ -27,8 +36,7 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
                     SizedBox(height: screenH(context) * 0.25),
                     LogoAndTitleWidget(
                         title: 'استعادة كلمة المرور',
-                        bodyText:
-                            'الرجاء ادخال كلمة المرور الجديدة لحسابك'),
+                        bodyText: 'الرجاء ادخال كلمة المرور الجديدة لحسابك'),
                     SizedBox(height: 20),
                     FormInputWidget(
                       iconName: Assets.icons.passwordInput,
@@ -39,17 +47,15 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
                       iconName: Assets.icons.passwordInput,
                       placeholder: 'تأكيد كلمة المرور الجديدة',
                     ),
-                    
                     SizedBox(height: 40),
                     CustomElevatedButton(
                       borderRadius: BorderRadius.circular(24),
-                      onPressed: () {},
+                      onPressed: _showDialog,
                       child: Text(
                         'تأكيد',
                         style: TextStyles.greenButton,
                       ),
                     ),
-                    
                   ],
                 ),
               ),
