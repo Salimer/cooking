@@ -19,15 +19,15 @@ class LogoAndTitleWidget extends StatelessWidget {
           title,
           style: TextStyles.logoTitle,
         ),
-        if(bodyText.isNotEmpty)  
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-          child: Text(
-            bodyText,
-            style: TextStyles.resetPasswordBody,
-            textAlign: TextAlign.center,
-          ),
-        ) 
+        if (bodyText.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+            child: Text(
+              bodyText,
+              style: TextStyles.resetPasswordBody,
+              textAlign: TextAlign.center,
+            ),
+          )
       ],
     );
   }
