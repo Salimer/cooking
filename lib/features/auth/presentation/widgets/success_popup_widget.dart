@@ -19,7 +19,7 @@ class SuccessPopupWidget extends StatelessWidget {
                   color: Colors.white, borderRadius: BorderRadius.circular(11)),
               child: Padding(
                 padding: const EdgeInsets.only(
-                    top: 20, bottom: 30, right: 40, left: 40),
+                    top: 15, bottom: 35, right: 40, left: 40),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
