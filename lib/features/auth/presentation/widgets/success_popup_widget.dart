@@ -35,9 +35,16 @@ class SuccessPopupWidget extends StatelessWidget {
                     SizedBox(height: 10),
                     SizedBox(
                       width: 200,
-                      child: Text(
-                        'سوف يتم اعادة توجيهك الى الصفحة الرئيسية خلال ',
-                        style: TextStyles.resetPasswordBody,
+                      child: Text.rich(
+                        TextSpan(children: [
+                          TextSpan(
+                              text:
+                                  'سوف يتم اعادة توجيهك الى الصفحة الرئيسية خلال ',
+                              style: TextStyles.resetPasswordBody),
+                          TextSpan(
+                              text: '00:05',
+                              style: TextStyles.greenTextSuccessMessage)
+                        ]),
                         textAlign: TextAlign.center,
                       ),
                     )
