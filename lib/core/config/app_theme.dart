@@ -55,4 +55,5 @@ class TextStyles {
   );
 
   static final TextStyle placeholder = TextStyle(color: Neutral.grey2);
+  static final TextStyle greenTextSuccessMessage = TextStyle(color: green[500]);
 }
