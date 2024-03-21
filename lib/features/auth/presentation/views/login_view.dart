@@ -25,7 +25,9 @@ class LoginView extends StatelessWidget {
                 child: Column(
                   children: [
                     SizedBox(height: screenH(context) * 0.25),
-                    LogoAndTitleWidget(),
+                    LogoAndTitleWidget(
+                      iconPath: Assets.icons.logo,
+                    ),
                     SizedBox(height: screenH(context) / 14),
                     FormInputWidget(
                       iconName: Assets.icons.emailInput,
