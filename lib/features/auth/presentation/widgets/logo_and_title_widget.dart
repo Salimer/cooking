@@ -7,8 +7,13 @@ class LogoAndTitleWidget extends StatelessWidget {
   final String iconPath;
   final String bodyText;
   final String title;
+  final double iconTitleGap;
   const LogoAndTitleWidget(
-      {super.key, this.title = 'اكتشف افضل وصفات الطعام', this.bodyText = '', required this.iconPath});
+      {super.key,
+      this.title = 'اكتشف افضل وصفات الطعام',
+      this.bodyText = '',
+      required this.iconPath,
+      this.iconTitleGap = 15});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +22,7 @@ class LogoAndTitleWidget extends StatelessWidget {
         AppLogoWidget(
           iconPath: iconPath,
         ),
-        SizedBox(height: screenH(context) / 67.666667),
+        SizedBox(height: iconTitleGap),
         Text(
           title,
           style: TextStyles.logoTitle,
@@ -27,7 +32,7 @@ class LogoAndTitleWidget extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
             child: Text(
               bodyText,
-              style: TextStyles.resetPasswordBody,
+              style: TextStyles.logoBodyStyle,
               textAlign: TextAlign.center,
             ),
           )
