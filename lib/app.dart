@@ -1,3 +1,4 @@
+import 'package:cooking/features/home/presentation/views/home_view.dart';
 import 'package:cooking/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'core/config/config.dart';
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
       home: const Directionality(
-          textDirection: TextDirection.rtl, child: OtpActiveAccountView()),
+          textDirection: TextDirection.rtl, child: HomeView()),
     );
   }
 }
