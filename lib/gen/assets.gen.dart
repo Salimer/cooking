@@ -12,6 +12,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/drawerIcon.svg
+  String get drawerIcon => 'assets/icons/drawerIcon.svg';
+
   /// File path: assets/icons/editEmailIcon.svg
   String get editEmailIcon => 'assets/icons/editEmailIcon.svg';
 
@@ -20,6 +23,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/logo.svg
   String get logo => 'assets/icons/logo.svg';
+
+  /// File path: assets/icons/notificationsIcon.svg
+  String get notificationsIcon => 'assets/icons/notificationsIcon.svg';
 
   /// File path: assets/icons/otpMessageIcon.svg
   String get otpMessageIcon => 'assets/icons/otpMessageIcon.svg';
@@ -35,9 +41,11 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<String> get values => [
+        drawerIcon,
         editEmailIcon,
         emailInput,
         logo,
+        notificationsIcon,
         otpMessageIcon,
         passwordInput,
         successPopupIcon,
