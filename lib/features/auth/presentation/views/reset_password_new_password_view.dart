@@ -35,7 +35,7 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
                   children: [
                     SizedBox(height: screenH(context) * 0.25),
                     LogoAndTitleWidget(
-                      iconPath: Assets.icons.logo,
+                        iconPath: Assets.icons.logo,
                         title: 'استعادة كلمة المرور',
                         bodyText: 'الرجاء ادخال كلمة المرور الجديدة لحسابك'),
                     SizedBox(height: 20),
