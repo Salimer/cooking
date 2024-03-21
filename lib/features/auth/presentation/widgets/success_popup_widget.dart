@@ -41,7 +41,7 @@ class SuccessPopupWidget extends StatelessWidget {
                           const TextSpan(
                               text:
                                   'سوف يتم اعادة توجيهك الى الصفحة الرئيسية خلال ',
-                              style: TextStyles.resetPasswordBody),
+                              style: TextStyles.logoBodyStyle),
                           TextSpan(
                               text: '00:05',
                               style: TextStyles.greenTextSuccessMessage)
