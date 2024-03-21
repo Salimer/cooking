@@ -6,3 +6,5 @@ export 'form_input_widget.dart';
 export 'logo_and_title_widget.dart';
 export 'remember_me_checkbox_widget.dart';
 export 'success_popup_widget.dart';
+export 'change_email_widget.dart';
+export 'pin_code_widget.dart';
