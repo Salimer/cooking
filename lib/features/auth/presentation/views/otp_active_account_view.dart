@@ -3,16 +3,12 @@ import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking/gen/assets.gen.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 
 class OtpActiveAccountView extends StatelessWidget {
   const OtpActiveAccountView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    bool rememberMe = false;
-    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-    String? email;
     return Scaffold(
       body: Stack(
         children: [
@@ -21,42 +17,37 @@ class OtpActiveAccountView extends StatelessWidget {
             child: Padding(
               padding:
                   EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
-              child: Form(
-                key: _formKey,
-                child: Column(
-                  children: [
-                    SizedBox(height: screenH(context) * 0.30),
-                    LogoAndTitleWidget(
-                        iconPath: Assets.icons.otpMessageIcon,
-                        title: 'تحقق من البريد الإلكتروني',
-                        bodyText:
-                            "لقد قمنا بإرسال رمز التحقق على بريدك الإلكتروني"),
-                    SizedBox(height: 20),
-                    PinCodeTextField(
-                      
-                      appContext: context,
-                      length: 4,
-                      pinTheme: PinTheme(
-                        fieldHeight: 70,
-                        fieldWidth: 70,
-                        shape: PinCodeFieldShape.box,
-                        borderRadius: BorderRadius.circular(24),
-                        borderWidth: 1,
-                        
-                      ),
-                      textStyle: TextStyles.logoTitle.copyWith(fontSize: 40),
-                    ),
-                    SizedBox(height: 40),
-                    CustomElevatedButton(
-                      borderRadius: BorderRadius.circular(24),
-                      onPressed: () {},
-                      child: Text(
-                        'استعادة كلمة المرور',
-                        style: TextStyles.greenButton,
-                      ),
-                    ),
-                  ],
-                ),
+              child: Column(
+                children: [
+                  SizedBox(height: screenH(context) * 0.20),
+                  LogoAndTitleWidget(
+                      iconPath: Assets.icons.otpMessageIcon,
+                      iconTitleGap: 30,
+                      title: 'تحقق من البريد الإلكتروني',
+                      bodyText:
+                          "لقد قمنا بإرسال رمز التحقق على بريدك الإلكتروني"),
+                  const SizedBox(height: 20),
+                  ChangeEmailWidget(),
+                  const SizedBox(height: 30),
+                  const Directionality(
+                    textDirection: TextDirection.ltr,
+                    child: PinCodeWidget(),
+                  ),
+                  const SizedBox(height: 40),
+                  Text.rich(
+                    TextSpan(children: [
+                      TextSpan(
+                          text: 'إعادة إرسال رمز التحقق بعد',
+                          style:
+                              TextStyles.logoBodyStyle.copyWith(fontSize: 14)),
+                      TextSpan(
+                          text: '  00:50',
+                          style: TextStyles.greenTextSuccessMessage
+                              .copyWith(fontSize: 12))
+                    ]),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
               ),
             ),
           )
