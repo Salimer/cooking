@@ -4,16 +4,19 @@ import 'package:cooking/core/widgets/app_logo_widget.dart';
 import 'package:flutter/material.dart';
 
 class LogoAndTitleWidget extends StatelessWidget {
+  final String iconPath;
   final String bodyText;
   final String title;
   const LogoAndTitleWidget(
-      {super.key, this.title = 'اكتشف افضل وصفات الطعام', this.bodyText = ''});
+      {super.key, this.title = 'اكتشف افضل وصفات الطعام', this.bodyText = '', required this.iconPath});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        AppLogoWidget(),
+        AppLogoWidget(
+          iconPath: iconPath,
+        ),
         SizedBox(height: screenH(context) / 67.666667),
         Text(
           title,
