@@ -9,9 +9,14 @@ class AppTheme {
   static ThemeData _lightTheme() {
     final theme = ThemeData.light();
     return theme.copyWith(
-      textTheme: theme.textTheme.apply(
-        fontFamily: FontFamily.dINNextLTW23,
-      ),
+      textTheme: theme.textTheme
+          .copyWith(
+            headlineLarge: TextStyle(
+                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
+            headlineMedium: TextStyle(
+                fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
+          )
+          .apply(fontFamily: FontFamily.dINNextLTW23),
     );
   }
 
