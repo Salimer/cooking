@@ -26,6 +26,7 @@ class ResetPasswordEnterEmailView extends StatelessWidget {
                   children: [
                     SizedBox(height: screenH(context) * 0.30),
                     LogoAndTitleWidget(
+                      iconPath: Assets.icons.logo,
                         title: 'استعادة كلمة المرور',
                         bodyText:
                             'الرجاء إدخال البريد المسجل لدينا من قبل، للتمكن من استعادة كلمة المرور'),
