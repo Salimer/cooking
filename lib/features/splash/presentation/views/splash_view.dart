@@ -15,7 +15,9 @@ class SplashView extends StatelessWidget {
           Assets.images.splashBackground.path,
           fit: BoxFit.cover,
         ),
-        Center(child: AppLogoWidget())
+        Center(child: AppLogoWidget(
+          iconPath: Assets.icons.logo,
+        ))
       ],
     ));
   }
