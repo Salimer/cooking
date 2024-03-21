@@ -26,7 +26,9 @@ class RegisterView extends StatelessWidget {
                 child: Column(
                   children: [
                     SizedBox(height: screenH(context) * 0.10),
-                    LogoAndTitleWidget(),
+                    LogoAndTitleWidget(
+                      iconPath: Assets.icons.logo,
+                    ),
                     SizedBox(height: screenH(context) / 30),
                     FormInputWidget(
                       iconName: Assets.icons.userInput,
