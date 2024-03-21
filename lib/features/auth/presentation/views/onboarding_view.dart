@@ -1,6 +1,7 @@
 import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
+import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingView extends StatelessWidget {
@@ -19,7 +20,9 @@ class OnboardingView extends StatelessWidget {
               child: Column(
                 children: [
                   SizedBox(height: screenH(context) * 0.35),
-                  LogoAndTitleWidget(),
+                  LogoAndTitleWidget(
+                    iconPath: Assets.icons.logo,
+                  ),
                   SizedBox(height: screenH(context) / 12),
                   CustomElevatedButton(
                     borderRadius: BorderRadius.circular(24),
