@@ -12,9 +12,10 @@ class SuccessPopupWidget extends StatelessWidget {
       backgroundColor: Colors.transparent,
       body: Center(
         child: Stack(
-          alignment: Alignment.bottomCenter,
+          alignment: Alignment.topCenter,
           children: [
             Container(
+              margin: const EdgeInsets.only(top: 30),
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(11)),
               child: Padding(
@@ -23,7 +24,7 @@ class SuccessPopupWidget extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    SizedBox(height: 100),
+                    const SizedBox(height: 100),
                     SizedBox(
                       width: 180,
                       child: Text(
@@ -32,12 +33,12 @@ class SuccessPopupWidget extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                     ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     SizedBox(
                       width: 200,
                       child: Text.rich(
                         TextSpan(children: [
-                          TextSpan(
+                          const TextSpan(
                               text:
                                   'سوف يتم اعادة توجيهك الى الصفحة الرئيسية خلال ',
                               style: TextStyles.resetPasswordBody),
@@ -52,18 +53,10 @@ class SuccessPopupWidget extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              height: 290,
-              decoration: BoxDecoration(color: Colors.transparent),
-              child: Column(
-                children: [
-                  SvgPicture.asset(
-                    Assets.icons.successPopupIcon,
-                    semanticsLabel: 'Success popup icon',
-                  ),
-                ],
-              ),
-            )
+            SvgPicture.asset(
+              Assets.icons.successPopupIcon,
+              semanticsLabel: 'Success popup icon',
+            ),
           ],
         ),
       ),
