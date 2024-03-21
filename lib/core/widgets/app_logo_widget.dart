@@ -5,10 +5,7 @@ import 'package:flutter_svg/svg.dart';
 
 class AppLogoWidget extends StatelessWidget {
   final String iconPath;
-  const AppLogoWidget({
-    super.key,
-    required this.iconPath
-  });
+  const AppLogoWidget({super.key, required this.iconPath});
 
   @override
   Widget build(BuildContext context) {
