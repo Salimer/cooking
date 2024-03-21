@@ -1,10 +1,7 @@
 import 'package:cooking/core/config/app_theme.dart';
 import 'package:cooking/core/constants/constants.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:cooking/gen/assets.gen.dart';
 
 class FormInputWidget extends StatelessWidget {
   final String placeholder;
