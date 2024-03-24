@@ -1,7 +1,9 @@
+import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/home/data/fake.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:infinite_carousel/infinite_carousel.dart';
 
 class PopularRecipesWidget extends StatelessWidget {
   const PopularRecipesWidget({
@@ -20,18 +22,18 @@ class PopularRecipesWidget extends StatelessWidget {
             child: SubtitlesWidget(subtitle: 'اشهر الوصفات'),
           ),
           SizedBox(
-            height: 95,
-            child: MasonryGridView.count(
-              scrollDirection: Axis.horizontal,
-              crossAxisCount: 2,
-              // mainAxisSpacing: 4,
-              crossAxisSpacing: 12,
+            height: 169,
+            child: InfiniteCarousel.builder(
+              loop: false,
               itemCount: categories.length,
-              itemBuilder: (context, index) => CategoryChipWidget(
-                  icon: categories[index]['icon']!,
-                  label: categories[index]['name']!),
+              itemExtent: 327,
+              itemBuilder: (context, itemIndex, realIndex) =>
+                  Container(
+                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                    margin: EdgeInsets.all(5)
+                  ),
             ),
-          )
+          ),
         ],
       ),
     );
