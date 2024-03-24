@@ -11,9 +11,9 @@ class AppTheme {
     return theme.copyWith(
       textTheme: theme.textTheme
           .copyWith(
-            headlineLarge: TextStyle(
+            headlineLarge: const TextStyle(
                 fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
-            headlineMedium: TextStyle(
+            headlineMedium: const TextStyle(
                 fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
           )
           .apply(fontFamily: FontFamily.dINNextLTW23),
@@ -59,6 +59,8 @@ class TextStyles {
     fontSize: 16,
   );
 
-  static final TextStyle placeholder = TextStyle(color: Neutral.grey2);
+  static const TextStyle placeholder = TextStyle(color: Neutral.grey2);
   static final TextStyle greenTextSuccessMessage = TextStyle(color: green[500]);
+  static const TextStyle chipText =
+      TextStyle(color: Neutral.grey1, fontSize: 16);
 }
