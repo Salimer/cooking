@@ -14,7 +14,9 @@ class App extends StatelessWidget {
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
       home: const Directionality(
-          textDirection: TextDirection.rtl, child: HomeView()),
+        textDirection: TextDirection.rtl,
+        child: OtpActiveAccountView(),
+      ),
     );
   }
 }
