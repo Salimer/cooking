@@ -56,18 +56,15 @@ class RegisterView extends StatelessWidget {
                         RememberMeCheckboxWidget(
                             text: Text(
                                 'أوافق على شروط الاستخدام و سياسة الخصوصية',
-                                style: TextStyles.rememberMe
-                                    .copyWith(fontSize: 12))),
+                                style: TextStyles.smallRegular
+                                    .copyWith(color: Neutral.grey1))),
                       ],
                     ),
                     SizedBox(height: 40),
                     CustomElevatedButton(
                       borderRadius: BorderRadius.circular(24),
                       onPressed: () {},
-                      child: Text(
-                        "إنشاء حساب",
-                        style: TextStyles.greenButton,
-                      ),
+                     text: "إنشاء حساب"
                     ),
                     SizedBox(height: 20),
                     AuthBottomActionWidget(
