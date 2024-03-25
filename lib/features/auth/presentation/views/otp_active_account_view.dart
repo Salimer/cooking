@@ -35,18 +35,18 @@ class OtpActiveAccountView extends StatelessWidget {
                   ),
                   const SizedBox(height: 40),
                   Text.rich(
-                    TextSpan(children: [
-                      TextSpan(
+                      TextSpan(children: [
+                        TextSpan(
                           text: 'إعادة إرسال رمز التحقق بعد',
-                          style:
-                              TextStyles.logoBodyStyle.copyWith(fontSize: 14)),
-                      TextSpan(
+                          style: TextStyle(color: Neutral.grey2),
+                        ),
+                        TextSpan(
                           text: '  00:50',
-                          style: TextStyles.greenTextSuccessMessage
-                              .copyWith(fontSize: 12))
-                    ]),
-                    textAlign: TextAlign.center,
-                  ),
+                          style: TextStyle(color: green[500]),
+                        )
+                      ]),
+                      textAlign: TextAlign.center,
+                      style: TextStyles.labelRegular),
                 ],
               ),
             ),
