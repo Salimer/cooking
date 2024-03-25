@@ -1,3 +1,4 @@
+import 'package:cooking/core/config/config.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking/core/constants/constants.dart';
 
@@ -5,12 +6,12 @@ class CustomElevatedButton extends StatelessWidget {
   final BorderRadiusGeometry? borderRadius;
   final double? width;
   final VoidCallback? onPressed;
-  final Widget child;
+  final String text;
 
   const CustomElevatedButton({
     Key? key,
     required this.onPressed,
-    required this.child,
+    required this.text,
     this.borderRadius,
     this.width = double.infinity,
   }) : super(key: key);
@@ -32,7 +33,10 @@ class CustomElevatedButton extends StatelessWidget {
           shadowColor: Colors.transparent,
           shape: RoundedRectangleBorder(borderRadius: borderRadius),
         ),
-        child: child,
+        child: Text(
+                      text,
+                      style: TextStyles.paraBold.copyWith(color: Neutral.white),
+                    ),
       ),
     );
   }
