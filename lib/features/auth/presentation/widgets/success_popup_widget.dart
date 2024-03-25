@@ -1,4 +1,5 @@
 import 'package:cooking/core/config/config.dart';
+import 'package:cooking/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:cooking/gen/assets.gen.dart';
@@ -29,7 +30,7 @@ class SuccessPopupWidget extends StatelessWidget {
                       width: 180,
                       child: Text(
                         'مبروك تم اعادة تعيين كلمة المرور',
-                        style: TextStyles.logoTitle,
+                        style: TextStyles.h5Bold.copyWith(color: red[500]),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -41,12 +42,13 @@ class SuccessPopupWidget extends StatelessWidget {
                           const TextSpan(
                               text:
                                   'سوف يتم اعادة توجيهك الى الصفحة الرئيسية خلال ',
-                              style: TextStyles.logoBodyStyle),
+                              style: TextStyle(color: Neutral.grey2)),
                           TextSpan(
                               text: '00:05',
-                              style: TextStyles.greenTextSuccessMessage)
+                              style: TextStyle(color: green[500]))
                         ]),
                         textAlign: TextAlign.center,
+                        style: TextStyles.paraRegular
                       ),
                     )
                   ],
