@@ -52,10 +52,9 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
                     CustomElevatedButton(
                       borderRadius: BorderRadius.circular(24),
                       onPressed: _showDialog,
-                      child: Text(
-                        'تأكيد',
-                        style: TextStyles.greenButton,
-                      ),
+                      text: 'تأكيد',
+                        
+                      
                     ),
                   ],
                 ),
