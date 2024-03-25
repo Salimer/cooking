@@ -9,9 +9,7 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool rememberMe = false;
-    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-    String? email;
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     return Scaffold(
       body: Stack(
         children: [
@@ -21,7 +19,7 @@ class LoginView extends StatelessWidget {
               padding:
                   EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
               child: Form(
-                key: _formKey,
+                key: formKey,
                 child: Column(
                   children: [
                     SizedBox(height: screenH(context) * 0.25),
