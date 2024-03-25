@@ -17,14 +17,9 @@ class PopularRecipesWidget extends StatelessWidget {
             padding: EdgeInsets.only(left: 20, right: 20),
             child: SubtitlesWidget(subtitle: 'اشهر الوصفات'),
           ),
-          SizedBox(
-            height: 169,
-            child: InfiniteCarouselWidget()
-          ),
+          SizedBox(height: 169, child: InfiniteCarouselWidget()),
         ],
       ),
     );
   }
 }
-
-
