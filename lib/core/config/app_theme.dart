@@ -9,6 +9,7 @@ class AppTheme {
   static ThemeData _lightTheme() {
     final theme = ThemeData.light();
     return theme.copyWith(
+      scaffoldBackgroundColor: Neutral.grey4,
       textTheme: theme.textTheme.apply(fontFamily: FontFamily.dINNextLTW23),
     );
   }
