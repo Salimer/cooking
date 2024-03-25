@@ -1,11 +1,7 @@
 import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
-import 'package:cooking/features/home/data/fake.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:cooking/gen/assets.gen.dart';
 
@@ -37,16 +33,16 @@ class HomeView extends StatelessWidget {
               children: [
                 Container(
                   color: Neutral.grey4,
+                  height: 110,
                   width: screenW(context),
-                  padding:
-                      EdgeInsets.only(top: 0, bottom: 40, right: 20, left: 90),
+                  padding: EdgeInsets.only(right: 20, left: 90),
                   child: Text('البحث عن أفضل الوصفات للطبخ',
-                      style: Theme.of(context).textTheme.headlineLarge),
+                      style: TextStyles.h4Bold.copyWith(color: Neutral.black)),
                 ),
                 Container(
                   child: Column(
-                    
                     children: [
+                      SizedBox(height: 40),
                       PopularCategoriesWidget(),
                       PopularRecipesWidget(),
                       LikedRecipesWidget(),
@@ -54,27 +50,14 @@ class HomeView extends StatelessWidget {
                     ],
                   ),
                 ),
-                
               ],
-            )
+            ),
+            SearchBarWidget()
           ],
         ),
       ),
     );
   }
-
-  // Wrap WrapMethod() {
-  //   return Wrap(
-  //     direction: Axis.vertical,
-  //     children: [
-  //       for (Map<String, String> category in categories)
-  //         CategoryChipWidget(
-  //           label: category['name']!,
-  //           icon: category['icon']!,
-  //         ),
-  //     ],
-  //   );
-  // }
 }
 
 
