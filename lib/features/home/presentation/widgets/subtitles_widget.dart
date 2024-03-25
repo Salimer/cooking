@@ -1,4 +1,5 @@
 import 'package:cooking/core/config/config.dart';
+import 'package:cooking/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class SubtitlesWidget extends StatelessWidget {
@@ -8,14 +9,14 @@ class SubtitlesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.symmetric(vertical: 10),
+        padding: const EdgeInsets.only(bottom: 20),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(subtitle, style: Theme.of(context).textTheme.headlineMedium),
+            Text(subtitle, style: TextStyles.h5Bold.copyWith(color: Neutral.black)),
             GestureDetector(
                 onTap: () {},
-                child: Text('عرض الكل', style: TextStyles.logoBodyStyle))
+                child: Text('عرض الكل', style: TextStyles.paraRegular.copyWith(color: Neutral.grey2)))
           ],
         ));
   }
