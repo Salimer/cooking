@@ -1,4 +1,3 @@
-import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -18,9 +17,7 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
       );
     }
 
-    bool rememberMe = false;
     final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-    String? email;
     return Scaffold(
       body: Stack(
         children: [
@@ -53,8 +50,6 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(24),
                       onPressed: _showDialog,
                       text: 'تأكيد',
-                        
-                      
                     ),
                   ],
                 ),
