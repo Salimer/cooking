@@ -39,10 +39,7 @@ class ResetPasswordEnterEmailView extends StatelessWidget {
                     CustomElevatedButton(
                       borderRadius: BorderRadius.circular(24),
                       onPressed: () {},
-                      child: Text(
-                        'استعادة كلمة المرور',
-                        style: TextStyles.greenButton,
-                      ),
+                      text: 'استعادة كلمة المرور'
                     ),
                   ],
                 ),
