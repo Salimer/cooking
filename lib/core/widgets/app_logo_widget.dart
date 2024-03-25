@@ -1,5 +1,4 @@
 import 'package:cooking/core/constants/constants.dart';
-import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
