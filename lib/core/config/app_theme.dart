@@ -9,14 +9,7 @@ class AppTheme {
   static ThemeData _lightTheme() {
     final theme = ThemeData.light();
     return theme.copyWith(
-      textTheme: theme.textTheme
-          .copyWith(
-            headlineLarge: const TextStyle(
-                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
-            headlineMedium: const TextStyle(
-                fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
-          )
-          .apply(fontFamily: FontFamily.dINNextLTW23),
+      textTheme: theme.textTheme.apply(fontFamily: FontFamily.dINNextLTW23),
     );
   }
 
@@ -27,40 +20,114 @@ class AppTheme {
 }
 
 class TextStyles {
-  static const double _logoTexFontSize = 20;
-  static const double _buttonFontSize = 16;
-  static const double _authBottomTextFontSize = 14;
-
-  static const TextStyle authBottomText = TextStyle(
-      fontSize: _authBottomTextFontSize,
-      color: Neutral.grey2,
-      fontWeight: FontWeight.w400);
-
-  static TextStyle logoTitle = TextStyle(
-      color: red[500], fontSize: _logoTexFontSize, fontWeight: FontWeight.bold);
-
-  static const TextStyle greenButton = TextStyle(
-    color: Colors.white,
+  static const TextStyle headingBold = TextStyle(
+    // height: 67.2,
+    fontSize: 56,
     fontWeight: FontWeight.bold,
-    fontSize: _buttonFontSize,
   );
 
-  static final TextStyle transButton = TextStyle(
-    fontSize: _buttonFontSize,
-    color: red[500]!,
-    fontWeight: FontWeight.w400,
+  static const TextStyle headingRegular = TextStyle(
+    // height: 67.2,
+    fontSize: 56,
+    fontWeight: FontWeight.normal,
   );
 
-  static const TextStyle rememberMe =
-      TextStyle(fontSize: 14, color: Neutral.black);
+  static const TextStyle h1Bold = TextStyle(
+    // height: 57.6,
+    fontSize: 48,
+    fontWeight: FontWeight.bold,
+  );
 
-  static const TextStyle logoBodyStyle = TextStyle(
-    color: Neutral.grey2,
+  static const TextStyle h1Regular = TextStyle(
+    // height: 57.6,
+    fontSize: 48,
+    fontWeight: FontWeight.normal,
+  );
+
+  static const TextStyle h2Bold = TextStyle(
+    // height: 48,
+    fontSize: 40,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle h2Regular = TextStyle(
+    // height: 48,
+    fontSize: 40,
+    fontWeight: FontWeight.normal,
+  );
+
+  static const TextStyle h3Bold = TextStyle(
+    // height: 38.4,
+    fontSize: 32,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle h3Regular = TextStyle(
+    // height: 38.4,
+    fontSize: 32,
+    fontWeight: FontWeight.normal,
+  );
+
+  static const TextStyle h4Bold = TextStyle(
+    // height: 28.8,
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle h4Regular = TextStyle(
+    // height: 28.8,
+    fontSize: 24,
+    fontWeight: FontWeight.normal,
+  );
+
+  static const TextStyle h5Bold = TextStyle(
+    // height: 28,
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle h5Regular = TextStyle(
+    // height: 28,
+    fontSize: 20,
+    fontWeight: FontWeight.normal,
+  );
+
+  static const TextStyle paraBold = TextStyle(
+    // height: 22.4,
     fontSize: 16,
+    fontWeight: FontWeight.bold,
   );
 
-  static const TextStyle placeholder = TextStyle(color: Neutral.grey2);
-  static final TextStyle greenTextSuccessMessage = TextStyle(color: green[500]);
-  static const TextStyle chipText =
-      TextStyle(color: Neutral.grey1, fontSize: 16);
+  static const TextStyle paraRegular = TextStyle(
+    // height: 22.4,
+    fontSize: 16,
+    fontWeight: FontWeight.normal,
+  );
+
+  static const TextStyle labelBold = TextStyle(
+    // height: 19.6,
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle labelRegular = TextStyle(
+    // height: 19.6,
+    fontSize: 14,
+    fontWeight: FontWeight.normal,
+  );
+
+  static const TextStyle smallBold = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle smallRegular = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+  );
+
+  static const TextStyle tinyBold = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.bold,
+  );
 }
