@@ -23,7 +23,7 @@ class PinCodeWidget extends StatelessWidget {
         activeColor: orange[500],
         selectedColor: red[500],
       ),
-      textStyle: TextStyles.logoTitle.copyWith(fontSize: 40),
+      textStyle: TextStyles.h2Bold.copyWith(color: red[500]),
     );
   }
 }
