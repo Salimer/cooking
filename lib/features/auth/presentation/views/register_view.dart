@@ -3,16 +3,13 @@ import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking/gen/assets.gen.dart';
-import 'package:flutter/widgets.dart';
 
 class RegisterView extends StatelessWidget {
   const RegisterView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    bool rememberMe = false;
-    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-    String? email;
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     return Scaffold(
       body: Stack(
         children: [
@@ -22,7 +19,7 @@ class RegisterView extends StatelessWidget {
               padding:
                   EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
               child: Form(
-                key: _formKey,
+                key: formKey,
                 child: Column(
                   children: [
                     SizedBox(height: screenH(context) * 0.10),
@@ -54,18 +51,19 @@ class RegisterView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         RememberMeCheckboxWidget(
-                            text: Text(
-                                'أوافق على شروط الاستخدام و سياسة الخصوصية',
-                                style: TextStyles.smallRegular
-                                    .copyWith(color: Neutral.grey1))),
+                          text: Text(
+                            'أوافق على شروط الاستخدام و سياسة الخصوصية',
+                            style: TextStyles.smallRegular
+                                .copyWith(color: Neutral.grey1),
+                          ),
+                        ),
                       ],
                     ),
                     SizedBox(height: 40),
                     CustomElevatedButton(
-                      borderRadius: BorderRadius.circular(24),
-                      onPressed: () {},
-                     text: "إنشاء حساب"
-                    ),
+                        borderRadius: BorderRadius.circular(24),
+                        onPressed: () {},
+                        text: "إنشاء حساب"),
                     SizedBox(height: 20),
                     AuthBottomActionWidget(
                       greenText: 'إنشاء حساب',
