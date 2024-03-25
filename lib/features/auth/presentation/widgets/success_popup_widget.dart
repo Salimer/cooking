@@ -38,18 +38,17 @@ class SuccessPopupWidget extends StatelessWidget {
                     SizedBox(
                       width: 200,
                       child: Text.rich(
-                        TextSpan(children: [
-                          const TextSpan(
-                              text:
-                                  'سوف يتم اعادة توجيهك الى الصفحة الرئيسية خلال ',
-                              style: TextStyle(color: Neutral.grey2)),
-                          TextSpan(
-                              text: '00:05',
-                              style: TextStyle(color: green[500]))
-                        ]),
-                        textAlign: TextAlign.center,
-                        style: TextStyles.paraRegular
-                      ),
+                          TextSpan(children: [
+                            const TextSpan(
+                                text:
+                                    'سوف يتم اعادة توجيهك الى الصفحة الرئيسية خلال ',
+                                style: TextStyle(color: Neutral.grey2)),
+                            TextSpan(
+                                text: '00:05',
+                                style: TextStyle(color: green[500]))
+                          ]),
+                          textAlign: TextAlign.center,
+                          style: TextStyles.paraRegular),
                     )
                   ],
                 ),
