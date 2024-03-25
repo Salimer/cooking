@@ -12,11 +12,14 @@ class SearchBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: 80,
+      top: 90,
       right: 0,
       left: 0,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 40),
+        padding: EdgeInsets.symmetric(
+          horizontal:
+              phoneOrientation(context) == Orientation.landscape ? 80 : 25,
+        ),
         child: Container(
           decoration: BoxDecoration(
             boxShadow: [
