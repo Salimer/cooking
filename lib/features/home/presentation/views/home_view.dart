@@ -33,7 +33,7 @@ class HomeView extends StatelessWidget {
               children: [
                 Container(
                   color: Neutral.grey4,
-                  height: 110,
+                  height: 120,
                   width: screenW(context),
                   padding: EdgeInsets.only(right: 20, left: 90),
                   child: Text('البحث عن أفضل الوصفات للطبخ',
