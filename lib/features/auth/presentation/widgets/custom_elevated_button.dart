@@ -34,9 +34,9 @@ class CustomElevatedButton extends StatelessWidget {
           shape: RoundedRectangleBorder(borderRadius: borderRadius),
         ),
         child: Text(
-                      text,
-                      style: TextStyles.paraBold.copyWith(color: Neutral.white),
-                    ),
+          text,
+          style: TextStyles.paraBold.copyWith(color: Neutral.white),
+        ),
       ),
     );
   }
