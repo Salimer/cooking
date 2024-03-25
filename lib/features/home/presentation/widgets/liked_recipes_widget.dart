@@ -23,19 +23,12 @@ class LikedRecipesWidget extends StatelessWidget {
           ),
           SizedBox(
             height: 169,
-            child: InfiniteCarousel.builder(
-              loop: false,
-              itemCount: categories.length,
-              itemExtent: 327,
-              itemBuilder: (context, itemIndex, realIndex) =>
-                  Container(
-                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
-                    margin: EdgeInsets.all(5)
-                  ),
-            ),
+            child: InfiniteCarouselWidget(),
           ),
         ],
       ),
     );
   }
 }
+
+
