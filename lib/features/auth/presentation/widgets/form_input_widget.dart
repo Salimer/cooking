@@ -18,7 +18,7 @@ class FormInputWidget extends StatelessWidget {
       autocorrect: false,
       decoration: InputDecoration(
         labelText: placeholder,
-        labelStyle: TextStyles.placeholder,
+        labelStyle: TextStyles.labelRegular.copyWith(color: Neutral.grey2),
         prefixIcon: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           mainAxisSize: MainAxisSize.min,
