@@ -5,11 +5,8 @@ import 'package:flutter/material.dart';
 class CategoryChipWidget extends StatelessWidget {
   final String label;
   final String icon;
-  const CategoryChipWidget({
-    super.key,
-    required this.icon,
-    required this.label 
-  });
+  const CategoryChipWidget(
+      {super.key, required this.icon, required this.label});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +29,8 @@ class CategoryChipWidget extends StatelessWidget {
                       color: Colors.white, shape: BoxShape.circle),
                   child: Text(icon, style: TextStyle(fontSize: 16))),
               SizedBox(width: 5),
-              Text(label, style: TextStyles.paraRegular.copyWith(color: Neutral.grey1))
+              Text(label,
+                  style: TextStyles.paraRegular.copyWith(color: Neutral.grey1))
             ],
           )),
     );
