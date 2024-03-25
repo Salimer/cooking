@@ -32,7 +32,7 @@ class CategoryChipWidget extends StatelessWidget {
                       color: Colors.white, shape: BoxShape.circle),
                   child: Text(icon, style: TextStyle(fontSize: 16))),
               SizedBox(width: 5),
-              Text(label, style: TextStyles.chipText)
+              Text(label, style: TextStyles.paraRegular.copyWith(color: Neutral.grey1))
             ],
           )),
     );
