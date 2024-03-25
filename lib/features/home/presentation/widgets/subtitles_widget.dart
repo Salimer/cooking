@@ -9,15 +9,23 @@ class SubtitlesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.only(bottom: 20),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(subtitle, style: TextStyles.h5Bold.copyWith(color: Neutral.black)),
-            GestureDetector(
-                onTap: () {},
-                child: Text('عرض الكل', style: TextStyles.paraRegular.copyWith(color: Neutral.grey2)))
-          ],
-        ));
+      padding: const EdgeInsets.only(bottom: 15),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            subtitle,
+            style: TextStyles.h5Bold.copyWith(color: Neutral.black),
+          ),
+          GestureDetector(
+            onTap: () {},
+            child: Text(
+              'عرض الكل',
+              style: TextStyles.paraRegular.copyWith(color: Neutral.grey2),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
