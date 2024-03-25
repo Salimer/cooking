@@ -1,4 +1,3 @@
-import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -9,9 +8,7 @@ class ResetPasswordEnterEmailView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool rememberMe = false;
-    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-    String? email;
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     return Scaffold(
       body: Stack(
         children: [
@@ -21,7 +18,7 @@ class ResetPasswordEnterEmailView extends StatelessWidget {
               padding:
                   EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
               child: Form(
-                key: _formKey,
+                key: formKey,
                 child: Column(
                   children: [
                     SizedBox(height: screenH(context) * 0.30),
@@ -30,12 +27,12 @@ class ResetPasswordEnterEmailView extends StatelessWidget {
                         title: 'استعادة كلمة المرور',
                         bodyText:
                             'الرجاء إدخال البريد المسجل لدينا من قبل، للتمكن من استعادة كلمة المرور'),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     FormInputWidget(
                       iconName: Assets.icons.emailInput,
                       placeholder: 'البريد اللإلكتروني',
                     ),
-                    SizedBox(height: 40),
+                    const SizedBox(height: 40),
                     CustomElevatedButton(
                       borderRadius: BorderRadius.circular(24),
                       onPressed: () {},
