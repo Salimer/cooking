@@ -41,20 +41,22 @@ class LoginView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         RememberMeCheckboxWidget(
-                            text: Text('تذكرني', style: TextStyles.labelRegular.copyWith(color: Neutral.black))),
+                            text: Text('تذكرني',
+                                style: TextStyles.labelRegular
+                                    .copyWith(color: Neutral.black))),
                         GestureDetector(
                           onTap: () {},
                           child: Text('نسيت كلمة المرور؟',
-                              style: TextStyles.labelRegular.copyWith(color: Neutral.black)),
+                              style: TextStyles.labelRegular
+                                  .copyWith(color: Neutral.black)),
                         )
                       ],
                     ),
                     SizedBox(height: 40),
                     CustomElevatedButton(
-                      borderRadius: BorderRadius.circular(24),
-                      onPressed: () {},
-                      text: 'تسجيل الدخول'
-                    ),
+                        borderRadius: BorderRadius.circular(24),
+                        onPressed: () {},
+                        text: 'تسجيل الدخول'),
                     SizedBox(height: 20),
                     AuthBottomActionWidget(
                       greenText: 'إنشاء حساب',
