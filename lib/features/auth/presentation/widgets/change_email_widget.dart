@@ -26,7 +26,8 @@ class ChangeEmailWidget extends StatelessWidget {
               Assets.icons.editEmailIcon,
             ),
             SizedBox(width: 5),
-            Text('aldeerah400@gmail.com', style: TextStyles.paraRegular.copyWith(color: red[500]))
+            Text('aldeerah400@gmail.com',
+                style: TextStyles.paraRegular.copyWith(color: red[500]))
           ],
         ),
       ),
