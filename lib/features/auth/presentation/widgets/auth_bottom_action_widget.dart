@@ -14,7 +14,8 @@ class AuthBottomActionWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(whiteText, style: TextStyles.labelRegular.copyWith(color: Neutral.grey2)),
+          Text(whiteText,
+              style: TextStyles.labelRegular.copyWith(color: Neutral.grey2)),
           ShaderMask(
             shaderCallback: (bounds) =>
                 LinearGradient(colors: [green[100]!, green[500]!])
