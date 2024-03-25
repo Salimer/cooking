@@ -25,14 +25,14 @@ class LogoAndTitleWidget extends StatelessWidget {
         SizedBox(height: iconTitleGap),
         Text(
           title,
-          style: TextStyles.logoTitle,
+          style: TextStyles.h5Bold.copyWith(color: red[500]),
         ),
         if (bodyText.isNotEmpty)
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
             child: Text(
               bodyText,
-              style: TextStyles.logoBodyStyle,
+              style: TextStyles.paraRegular.copyWith(color: Neutral.grey2),
               textAlign: TextAlign.center,
             ),
           )
