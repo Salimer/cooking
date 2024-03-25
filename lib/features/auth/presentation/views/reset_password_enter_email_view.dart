@@ -34,10 +34,9 @@ class ResetPasswordEnterEmailView extends StatelessWidget {
                     ),
                     const SizedBox(height: 40),
                     CustomElevatedButton(
-                      borderRadius: BorderRadius.circular(24),
-                      onPressed: () {},
-                      text: 'استعادة كلمة المرور'
-                    ),
+                        borderRadius: BorderRadius.circular(24),
+                        onPressed: () {},
+                        text: 'استعادة كلمة المرور'),
                   ],
                 ),
               ),
