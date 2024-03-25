@@ -1,3 +1,4 @@
+import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/home/data/fake.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
@@ -27,11 +28,22 @@ class PopularRecipesWidget extends StatelessWidget {
               loop: false,
               itemCount: categories.length,
               itemExtent: 327,
-              itemBuilder: (context, itemIndex, realIndex) =>
-                  Container(
-                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
-                    margin: EdgeInsets.all(5)
+              itemBuilder: (context, itemIndex, realIndex) => Container(
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(16)),
+                margin: EdgeInsets.all(5),
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 20, right: 20, left: 20),
+                    child: Text(
+                      'عنوان الوصفة يمكن تغيير بعنوان اخر عنوان الوصفة يمكن',
+                      style: TextStyles.paraBold.copyWith(color: Colors.white),
+                    ),
                   ),
+                ),
+              ),
             ),
           ),
         ],
