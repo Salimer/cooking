@@ -40,6 +40,7 @@ class HomeView extends StatelessWidget {
                       style: TextStyles.h4Bold.copyWith(color: Neutral.black)),
                 ),
                 Container(
+                  color: Neutral.white,
                   child: Column(
                     children: [
                       SizedBox(height: 40),
@@ -59,5 +60,3 @@ class HomeView extends StatelessWidget {
     );
   }
 }
-
-
