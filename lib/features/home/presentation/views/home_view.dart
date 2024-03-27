@@ -26,35 +26,37 @@ class HomeView extends StatelessWidget {
         ],
       ),
       drawer: Drawer(),
-      body: SingleChildScrollView(
-        child: Stack(
-          children: [
-            Column(
-              children: [
-                Container(
-                  color: Neutral.grey4,
-                  height: 120,
-                  width: screenW(context),
-                  padding: EdgeInsets.only(right: 20, left: 90),
-                  child: Text('البحث عن أفضل الوصفات للطبخ',
-                      style: TextStyles.h4Bold.copyWith(color: Neutral.black)),
-                ),
-                Container(
-                  color: Neutral.white,
-                  child: Column(
-                    children: [
-                      SizedBox(height: 40),
-                      PopularCategoriesWidget(),
-                      PopularRecipesWidget(),
-                      LikedRecipesWidget(),
-                      SizedBox(height: 70)
-                    ],
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Stack(
+            children: [
+              Column(
+                children: [
+                  Container(
+                    color: Neutral.grey4,
+                    height: 120,
+                    width: screenW(context),
+                    padding: EdgeInsets.only(right: 20, left: 90),
+                    child: Text('البحث عن أفضل الوصفات للطبخ',
+                        style: TextStyles.h4Bold.copyWith(color: Neutral.black)),
                   ),
-                ),
-              ],
-            ),
-            SearchBarWidget()
-          ],
+                  Container(
+                    color: Neutral.white,
+                    child: Column(
+                      children: [
+                        SizedBox(height: 40),
+                        PopularCategoriesWidget(),
+                        PopularRecipesWidget(),
+                        LikedRecipesWidget(),
+                        SizedBox(height: 70)
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SearchBarWidget()
+            ],
+          ),
         ),
       ),
     );
