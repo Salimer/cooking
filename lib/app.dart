@@ -14,7 +14,7 @@ class App extends StatelessWidget {
       theme: AppTheme.lightTheme,
       home: const Directionality(
         textDirection: TextDirection.rtl,
-        child: OnboardingView(),
+        child: HomeView(),
       ),
     );
   }
