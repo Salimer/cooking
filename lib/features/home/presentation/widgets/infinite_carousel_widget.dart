@@ -1,3 +1,4 @@
+import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/home/data/fake.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
