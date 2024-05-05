@@ -27,7 +27,7 @@ class OtpActiveAccountView extends StatelessWidget {
                       bodyText:
                           "لقد قمنا بإرسال رمز التحقق على بريدك الإلكتروني"),
                   const SizedBox(height: 20),
-                  ChangeEmailWidget(),
+                  const ChangeEmailWidget(),
                   const SizedBox(height: 30),
                   const Directionality(
                     textDirection: TextDirection.ltr,
@@ -36,7 +36,7 @@ class OtpActiveAccountView extends StatelessWidget {
                   const SizedBox(height: 40),
                   Text.rich(
                       TextSpan(children: [
-                        TextSpan(
+                        const TextSpan(
                           text: 'إعادة إرسال رمز التحقق بعد',
                           style: TextStyle(color: Neutral.grey2),
                         ),
