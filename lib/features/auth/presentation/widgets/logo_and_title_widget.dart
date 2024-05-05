@@ -1,4 +1,3 @@
-import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/core/widgets/app_logo_widget.dart';
 import 'package:flutter/material.dart';
