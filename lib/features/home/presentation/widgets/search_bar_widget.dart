@@ -28,12 +28,12 @@ class SearchBarWidget extends StatelessWidget {
                   blurRadius: 30.0, // Increase blurRadius for wider shadow
                   spreadRadius:
                       10.0, // Increase spreadRadius for wider shadow area
-                  offset: Offset(0, 10)),
+                  offset: const Offset(0, 10)),
             ],
           ),
           child: TextField(
             decoration: InputDecoration(
-              contentPadding: EdgeInsets.symmetric(vertical: 15),
+              contentPadding: const EdgeInsets.symmetric(vertical: 15),
               border: OutlineInputBorder(
                   borderSide: BorderSide.none,
                   borderRadius: BorderRadius.circular(25)),
