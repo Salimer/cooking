@@ -18,7 +18,7 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
       );
     }
 
-    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     return Scaffold(
       body: Stack(
         children: [
@@ -28,7 +28,7 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
               padding:
                   EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
               child: Form(
-                key: _formKey,
+                key: formKey,
                 child: Column(
                   children: [
                     SizedBox(height: screenH(context) * 0.25),
