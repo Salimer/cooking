@@ -66,7 +66,7 @@ class RegisterView extends StatelessWidget {
                         text: "إنشاء حساب"),
                     SizedBox(height: 20),
                     AuthBottomActionWidget(
-                      greenText: 'إنشاء حساب',
+                      redText: 'إنشاء حساب',
                       whiteText: 'لا تملك حساب؟',
                     ),
                     SizedBox(height: 30)
