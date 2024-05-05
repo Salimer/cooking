@@ -35,7 +35,7 @@ class LoginView extends StatelessWidget {
                     FormInputWidget(
                         iconName: Assets.icons.passwordInput,
                         placeholder: 'كلمة المرور'),
-                    SizedBox(height: 12),
+                    const SizedBox(height: 12),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -52,17 +52,17 @@ class LoginView extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(height: 40),
+                    const SizedBox(height: 40),
                     CustomElevatedButton(
                         borderRadius: BorderRadius.circular(24),
                         onPressed: () {},
                         text: 'تسجيل الدخول'),
-                    SizedBox(height: 20),
-                    AuthBottomActionWidget(
-                      greenText: 'إنشاء حساب',
+                    const SizedBox(height: 20),
+                    const AuthBottomActionWidget(
+                      redText: 'إنشاء حساب',
                       whiteText: 'لا تملك حساب؟',
                     ),
-                    SizedBox(height: 30)
+                    const SizedBox(height: 30)
                   ],
                 ),
               ),
