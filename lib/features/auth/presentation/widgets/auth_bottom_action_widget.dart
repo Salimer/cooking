@@ -3,33 +3,28 @@ import 'package:cooking/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class AuthBottomActionWidget extends StatelessWidget {
-  final String greenText;
+  final String redText;
   final String whiteText;
   const AuthBottomActionWidget(
-      {super.key, required this.greenText, required this.whiteText});
+      {super.key, required this.redText, required this.whiteText});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(whiteText,
-              style: TextStyles.labelRegular.copyWith(color: Neutral.grey2)),
-          ShaderMask(
-            shaderCallback: (bounds) =>
-                LinearGradient(colors: [green[100]!, green[500]!])
-                    .createShader(bounds),
-            child: TextButton(
-              onPressed: () {},
-              child: Text(
-                greenText,
-                style: TextStyles.labelBold.copyWith(color: Neutral.white),
-              ),
-            ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          whiteText,
+          style: TextStyles.labelRegular.copyWith(color: Neutral.grey2),
+        ),
+        TextButton(
+          onPressed: () {},
+          child: Text(
+            redText,
+            style: TextStyles.labelBold.copyWith(color: red[500]),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
