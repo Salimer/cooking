@@ -42,7 +42,7 @@ class OtpActiveAccountView extends StatelessWidget {
                         ),
                         TextSpan(
                           text: '  00:50',
-                          style: TextStyle(color: green[500]),
+                          style: TextStyle(color: red[500]),
                         )
                       ]),
                       textAlign: TextAlign.center,
