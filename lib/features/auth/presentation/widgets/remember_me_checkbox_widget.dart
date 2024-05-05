@@ -1,4 +1,3 @@
-import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/auth/presentation/widgets/custom_checkbox_widget.dart';
 import 'package:flutter/material.dart';
