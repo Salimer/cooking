@@ -13,7 +13,7 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
       showDialog(
         context: context,
         builder: (context) {
-          return SuccessPopupWidget();
+          return const SuccessPopupWidget();
         },
       );
     }
@@ -36,7 +36,7 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
                         iconPath: Assets.icons.logo,
                         title: 'استعادة كلمة المرور',
                         bodyText: 'الرجاء ادخال كلمة المرور الجديدة لحسابك'),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     FormInputWidget(
                       iconName: Assets.icons.passwordInput,
                       placeholder: 'كلمة المرور الجديدة',
@@ -46,7 +46,7 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
                       iconName: Assets.icons.passwordInput,
                       placeholder: 'تأكيد كلمة المرور الجديدة',
                     ),
-                    SizedBox(height: 40),
+                    const SizedBox(height: 40),
                     CustomElevatedButton(
                       borderRadius: BorderRadius.circular(24),
                       onPressed: _showDialog,
