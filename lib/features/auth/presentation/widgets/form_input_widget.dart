@@ -1,4 +1,3 @@
-import 'package:cooking/core/config/app_theme.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -23,12 +22,12 @@ class FormInputWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           mainAxisSize: MainAxisSize.min,
           children: [
-            SizedBox(width: prefixIconGap + 5),
+            const SizedBox(width: prefixIconGap + 5),
             FormInputIcon(
               iconName: iconName,
             ),
-            SizedBox(width: prefixIconGap),
-            SizedBox(
+            const SizedBox(width: prefixIconGap),
+            const SizedBox(
               height: 20,
               child: VerticalDivider(
                 width: 5,
@@ -36,16 +35,16 @@ class FormInputWidget extends StatelessWidget {
                 thickness: 1,
               ),
             ),
-            SizedBox(width: prefixIconGap)
+            const SizedBox(width: prefixIconGap)
           ],
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(width: 8),
+          borderSide: const BorderSide(width: 8),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(width: 2, color: Neutral.grey4),
+          borderSide: const BorderSide(width: 2, color: Neutral.grey4),
         ),
       ),
       validator: (value) {
