@@ -48,7 +48,7 @@ class OnboardingView extends StatelessWidget {
                   ),
                   SizedBox(height: screenH(context) / 15),
                   const AuthBottomActionWidget(
-                    greenText: "تسجيل الدخول",
+                    redText: "تسجيل الدخول",
                     whiteText: "هل لديك حساب؟",
                   ),
                   SizedBox(height: screenH(context) / 19.3333)
