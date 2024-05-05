@@ -9,22 +9,22 @@ const MaterialColor green = MaterialColor(
 );
 
 const MaterialColor red = MaterialColor(
-  0xffda6317,
+  0xffe23e3e,
   <int, Color>{
-    500: Color(0xffda6317),
-    400: Color(0xffe38751),
-    200: Color(0xffe6a986),
-    100: Color(0xffe3cbbc),
+    500: Color(0xffe23e3e),
+    400: Color(0xffe86565),
+    300: Color(0xffee8b8b),
+    200: Color(0xfff3b2b2),
   },
 );
 
 const MaterialColor orange = MaterialColor(
-  0xffffad1d,
+  0xffff9c00,
   <int, Color>{
-    500: Color(0xffffad1d),
-    400: Color(0xffffc668),
-    200: Color(0xffffdea4),
-    100: Color(0xfffef8e0),
+    500: Color(0xffff9c00),
+    400: Color(0xffffa61a),
+    200: Color(0xffffce80),
+    100: Color(0xffffe1b3),
   },
 );
 
