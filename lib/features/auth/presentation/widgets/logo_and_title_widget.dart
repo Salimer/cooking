@@ -25,7 +25,7 @@ class LogoAndTitleWidget extends StatelessWidget {
         SizedBox(height: iconTitleGap),
         Text(
           title,
-          style: TextStyles.h5Bold.copyWith(color: orange[500]),
+          style: TextStyles.h5Bold.copyWith(color: red[500]),
         ),
         if (bodyText.isNotEmpty)
           Padding(
