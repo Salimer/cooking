@@ -25,7 +25,7 @@ class HomeView extends StatelessWidget {
               icon: SvgPicture.asset(Assets.icons.notificationsIcon))
         ],
       ),
-      drawer: Drawer(),
+      drawer: const Drawer(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Stack(
@@ -36,13 +36,13 @@ class HomeView extends StatelessWidget {
                     color: Neutral.grey4,
                     height: 120,
                     width: screenW(context),
-                    padding: EdgeInsets.only(right: 20, left: 90),
+                    padding: const EdgeInsets.only(right: 20, left: 90),
                     child: Text('البحث عن أفضل الوصفات للطبخ',
                         style: TextStyles.h4Bold.copyWith(color: Neutral.black)),
                   ),
                   Container(
                     color: Neutral.white,
-                    child: Column(
+                    child: const Column(
                       children: [
                         SizedBox(height: 40),
                         PopularCategoriesWidget(),
@@ -54,7 +54,7 @@ class HomeView extends StatelessWidget {
                   ),
                 ],
               ),
-              SearchBarWidget()
+              const SearchBarWidget()
             ],
           ),
         ),
