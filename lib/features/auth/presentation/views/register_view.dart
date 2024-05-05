@@ -45,7 +45,7 @@ class RegisterView extends StatelessWidget {
                       iconName: Assets.icons.passwordInput,
                       placeholder: 'تأكيد كلمة المرور',
                     ),
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,17 +59,17 @@ class RegisterView extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 40),
+                    const SizedBox(height: 40),
                     CustomElevatedButton(
                         borderRadius: BorderRadius.circular(24),
                         onPressed: () {},
                         text: "إنشاء حساب"),
-                    SizedBox(height: 20),
-                    AuthBottomActionWidget(
+                    const SizedBox(height: 20),
+                    const AuthBottomActionWidget(
                       redText: 'إنشاء حساب',
                       whiteText: 'لا تملك حساب؟',
                     ),
-                    SizedBox(height: 30)
+                    const SizedBox(height: 30)
                   ],
                 ),
               ),
