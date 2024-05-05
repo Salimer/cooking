@@ -1,4 +1,3 @@
-import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,7 @@ class CarouselBoxWidget extends StatelessWidget {
           colors: [Color(0xffd9d9d9), Colors.black],
         ),
       ),
-      margin: EdgeInsets.all(5),
+      margin: const EdgeInsets.all(5),
       child: Align(
         alignment: Alignment.bottomCenter,
         child: Padding(
