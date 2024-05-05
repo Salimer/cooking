@@ -10,10 +10,10 @@ class PopularRecipesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: EdgeInsets.only(top: 10, bottom: 10),
-      child: Column(
+      padding: const EdgeInsets.only(top: 10, bottom: 10),
+      child: const Column(
         children: [
-          const Padding(
+          Padding(
             padding: EdgeInsets.only(left: 20, right: 20),
             child: SubtitlesWidget(subtitle: 'اشهر الوصفات'),
           ),
