@@ -10,6 +10,6 @@
 class FontFamily {
   FontFamily._();
 
-  /// Font family: DINNextLTW23
-  static const String dINNextLTW23 = 'DINNextLTW23';
+  /// Font family: IBMPlexSansArabic
+  static const String iBMPlexSansArabic = 'IBMPlexSansArabic';
 }
