@@ -1,4 +1,3 @@
-import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
