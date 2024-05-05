@@ -1,4 +1,3 @@
-import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +24,7 @@ class ChangeEmailWidget extends StatelessWidget {
             SvgPicture.asset(
               Assets.icons.editEmailIcon,
             ),
-            SizedBox(width: 5),
+            const SizedBox(width: 5),
             Text('aldeerah400@gmail.com',
                 style: TextStyles.paraRegular.copyWith(color: red[500]))
           ],
