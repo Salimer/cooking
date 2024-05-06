@@ -1,3 +1,4 @@
+import 'package:cooking/core/constants/app_colors.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,7 @@ class LikedRecipesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: AppColors.homeBackground,
       padding: const EdgeInsets.only(top: 10, bottom: 10),
       child: const Column(
         children: [
