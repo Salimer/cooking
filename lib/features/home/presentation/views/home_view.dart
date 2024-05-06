@@ -2,6 +2,7 @@ import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:cooking/gen/assets.gen.dart';
 
@@ -26,23 +27,27 @@ class HomeView extends StatelessWidget {
         ],
       ),
       drawer: const Drawer(),
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Stack(
+      body: Stack(
+        children: [
+          Column(
             children: [
-              Column(
-                children: [
-                  Container(
-                    color: Neutral.grey4,
-                    height: 120,
-                    width: screenW(context),
-                    padding: const EdgeInsets.only(right: 20, left: 90),
-                    child: Text('البحث عن أفضل الوصفات للطبخ',
+              Container(
+                color: Neutral.grey4,
+                height: 120,
+                width: screenW(context),
+                padding: const EdgeInsets.only(right: 20, left: 90),
+                child: Stack(
+                  children: [
+                    Text('البحث عن أفضل الوصفات للطبخ',
                         style: TextStyles.h4Bold.copyWith(color: Neutral.black)),
-                  ),
-                  Container(
-                    color: Neutral.white,
-                    child: const Column(
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  color: Neutral.white,
+                  child: const SingleChildScrollView(
+                    child: Column(
                       children: [
                         SizedBox(height: 40),
                         PopularCategoriesWidget(),
@@ -52,12 +57,12 @@ class HomeView extends StatelessWidget {
                       ],
                     ),
                   ),
-                ],
+                ),
               ),
-              const SearchBarWidget()
             ],
           ),
-        ),
+          const SearchBarWidget()
+        ],
       ),
     );
   }
