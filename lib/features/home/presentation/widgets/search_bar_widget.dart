@@ -12,7 +12,7 @@ class SearchBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: 90,
+      top: 190,
       right: 0,
       left: 0,
       child: Padding(
