@@ -1,5 +1,5 @@
 import 'package:cooking/features/auth/presentation/views/views.dart';
-import 'package:cooking/features/home/presentation/views/views.dart';
+import 'package:cooking/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'core/config/config.dart';
 
@@ -14,7 +14,7 @@ class App extends StatelessWidget {
       theme: AppTheme.lightTheme,
       home: const Directionality(
         textDirection: TextDirection.rtl,
-        child: RegisterView(),
+        child: HomeView(),
       ),
     );
   }
