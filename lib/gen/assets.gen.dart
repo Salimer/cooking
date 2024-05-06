@@ -68,8 +68,13 @@ class $AssetsImagesGen {
   AssetGenImage get splashBackground =>
       const AssetGenImage('assets/images/SplashBackground.png');
 
+  /// File path: assets/images/homeCover.png
+  AssetGenImage get homeCover =>
+      const AssetGenImage('assets/images/homeCover.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [authBackground, splashBackground];
+  List<AssetGenImage> get values =>
+      [authBackground, splashBackground, homeCover];
 }
 
 class Assets {
