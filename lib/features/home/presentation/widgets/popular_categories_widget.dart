@@ -1,17 +1,17 @@
+import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/home/data/fake.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:flutter_svg/svg.dart';
 
 class PopularCategoriesWidget extends StatelessWidget {
-  const PopularCategoriesWidget({
-    super.key,
-  });
+  const PopularCategoriesWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: AppColors.homeBackground,
       padding: const EdgeInsets.only(top: 10, bottom: 10),
       child: Column(
         children: [
@@ -20,16 +20,32 @@ class PopularCategoriesWidget extends StatelessWidget {
             child: SubtitlesWidget(subtitle: 'فئات شعبية'),
           ),
           SizedBox(
-            height: 95,
-            child: MasonryGridView.count(
+            height: 110,
+            child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              crossAxisCount: 2,
-              // mainAxisSpacing: 4,
-              crossAxisSpacing: 12,
               itemCount: categories.length,
-              itemBuilder: (context, index) => CategoryChipWidget(
-                  icon: categories[index]['icon']!,
-                  label: categories[index]['name']!),
+              itemBuilder: (context, index) {
+                return Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: orange[100],
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(20),
+                            child: Text(
+                              categories[index]['icon']!,
+                              style: const TextStyle(fontSize: 30),
+                            ),
+                          ),
+                        ),
+                        Text(categories[index]['name']!)
+                      ],
+                    ));
+              },
             ),
           )
         ],
