@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+class AppColors {
+  static final Color? homeBackground = orange[50];
+}
+
 const MaterialColor green = MaterialColor(
   0xff15be77,
   <int, Color>{
@@ -25,6 +29,7 @@ const MaterialColor orange = MaterialColor(
     400: Color(0xffffa61a),
     200: Color(0xffffce80),
     100: Color(0xffffe1b3),
+    50: Color(0xffFFF5E6)
   },
 );
 
