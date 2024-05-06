@@ -20,7 +20,7 @@ class SubtitlesWidget extends StatelessWidget {
             onTap: () {},
             child: Text(
               'عرض الكل',
-              style: TextStyles.paraRegular.copyWith(color: Neutral.grey2),
+              style: TextStyles.paraRegular.copyWith(color: orange[500]),
             ),
           ),
         ],
