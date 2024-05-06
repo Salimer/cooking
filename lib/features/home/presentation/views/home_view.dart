@@ -12,47 +12,70 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Neutral.grey4,
-        leading: Builder(
-          builder: (context) => IconButton(
-            onPressed: () => Scaffold.of(context).openDrawer(),
-            icon: SvgPicture.asset(Assets.icons.drawerIcon),
-          ),
-        ),
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: SvgPicture.asset(Assets.icons.notificationsIcon))
-        ],
-      ),
       drawer: const Drawer(),
       body: Stack(
         children: [
           Column(
             children: [
-              Container(
-                color: Neutral.grey4,
-                height: 120,
+              SizedBox(
                 width: screenW(context),
-                padding: const EdgeInsets.only(right: 20, left: 90),
                 child: Stack(
                   children: [
-                    Text('البحث عن أفضل الوصفات للطبخ',
-                        style: TextStyles.h4Bold.copyWith(color: Neutral.black)),
+                    SizedBox(
+                      width: double.infinity,
+                      height: 218,
+                      child: Assets.images.homeCover.image(
+                          fit: BoxFit.contain, repeat: ImageRepeat.repeatX),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const SizedBox(height: 60),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Builder(
+                                builder: (context) => IconButton(
+                                  onPressed: () =>
+                                      Scaffold.of(context).openDrawer(),
+                                  icon: SvgPicture.asset(
+                                    Assets.icons.drawerIcon,
+                                    width: 30,
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: SvgPicture.asset(
+                                  Assets.icons.notificationsIcon,
+                                  width: 25,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 20, left: 90),
+                          child: Text('البحث عن أفضل الوصفات للطبخ',
+                              style: TextStyles.h4Bold
+                                  .copyWith(color: Neutral.white)),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
               Expanded(
                 child: Container(
-                  color: Neutral.white,
+                  color: AppColors.homeBackground,
                   child: const SingleChildScrollView(
                     child: Column(
                       children: [
                         SizedBox(height: 40),
                         PopularCategoriesWidget(),
                         PopularRecipesWidget(),
-                        LikedRecipesWidget(),
                         SizedBox(height: 70)
                       ],
                     ),
