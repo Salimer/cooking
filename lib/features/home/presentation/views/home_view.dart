@@ -74,9 +74,11 @@ class HomeView extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(height: 40),
+                        SubtitlesWidget(subtitle: 'فئات شعبية'),
                         PopularCategoriesWidget(),
-                        PopularRecipesWidget(),
-                        SizedBox(height: 70)
+                        SubtitlesWidget(subtitle: 'الأكثر مشاهدة'),
+                        RecipeCardWidget(),
+                        SizedBox(height: 0)
                       ],
                     ),
                   ),
