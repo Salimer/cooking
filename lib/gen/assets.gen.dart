@@ -12,6 +12,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/clockIcon.svg
+  String get clockIcon => 'assets/icons/clockIcon.svg';
+
   /// File path: assets/icons/drawerIcon.svg
   String get drawerIcon => 'assets/icons/drawerIcon.svg';
 
@@ -39,11 +42,15 @@ class $AssetsIconsGen {
   /// File path: assets/icons/successPopupIcon.svg
   String get successPopupIcon => 'assets/icons/successPopupIcon.svg';
 
+  /// File path: assets/icons/userIcon.svg
+  String get userIcon => 'assets/icons/userIcon.svg';
+
   /// File path: assets/icons/userInput.svg
   String get userInput => 'assets/icons/userInput.svg';
 
   /// List of all assets
   List<String> get values => [
+        clockIcon,
         drawerIcon,
         editEmailIcon,
         emailInput,
@@ -53,6 +60,7 @@ class $AssetsIconsGen {
         passwordInput,
         searchIcon,
         successPopupIcon,
+        userIcon,
         userInput
       ];
 }
@@ -72,9 +80,12 @@ class $AssetsImagesGen {
   AssetGenImage get homeCover =>
       const AssetGenImage('assets/images/homeCover.png');
 
+  /// File path: assets/images/recipe.png
+  AssetGenImage get recipe => const AssetGenImage('assets/images/recipe.png');
+
   /// List of all assets
   List<AssetGenImage> get values =>
-      [authBackground, splashBackground, homeCover];
+      [authBackground, splashBackground, homeCover, recipe];
 }
 
 class Assets {
