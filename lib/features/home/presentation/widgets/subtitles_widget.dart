@@ -1,3 +1,4 @@
+import 'package:cooking/core/constants/app_padds.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,7 @@ class SubtitlesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(bottom: 15),
+      padding: EdgeInsets.symmetric(vertical: 15, horizontal: homeScreenPadding(context)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
