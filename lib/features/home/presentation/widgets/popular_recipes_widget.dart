@@ -18,7 +18,6 @@ class PopularRecipesWidget extends StatelessWidget {
             padding: EdgeInsets.only(left: 20, right: 20),
             child: SubtitlesWidget(subtitle: 'الأكثر مشاهدة'),
           ),
-          SizedBox(height: 169, child: InfiniteCarouselWidget()),
         ],
       ),
     );
