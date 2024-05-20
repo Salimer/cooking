@@ -38,6 +38,7 @@ class Neutral {
   static const Color grey2 = Color(0xff858494);
   static const Color grey3 = Color(0xffdcdcdc);
   static const Color grey4 = Color(0xffe6e6e6);
+  static const Color grey5 = Color(0xffFCFCFC);
   static const Color black = Color(0xff0c092a);
   static const Color white = Color(0xffffffff);
 }
