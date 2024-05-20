@@ -1,4 +1,3 @@
-import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -25,15 +24,17 @@ class RecipeCardLabelWidget extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             SvgPicture.asset(icon),
+            const SizedBox(width: 5),
             RichText(
               text: TextSpan(children: [
-                TextSpan(text: duration.toString(), style: TextStyle(color: Colors.red)),
-                TextSpan(text: redText, style: TextStyle(color: Colors.red))
+                TextSpan(text: duration.toString(), style: const TextStyle(color: Colors.red)),
+                const TextSpan(text: ' '),
+                TextSpan(text: redText, style: const TextStyle(color: Colors.red))
               ]),
             )
           ],
         ),
-        Text(greyText, style: TextStyle(color: Colors.grey),)
+        Text(greyText, style: const TextStyle(color: Colors.grey),)
       ],
     );
   }
