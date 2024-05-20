@@ -10,7 +10,9 @@ class AppTheme {
     final theme = ThemeData.light();
     return theme.copyWith(
         scaffoldBackgroundColor: orange[50],
-        colorScheme: const ColorScheme.light(),
+        colorScheme: ColorScheme.light(
+          primary: red[500]!
+        ),
         textTheme: theme.textTheme
             .copyWith(
               labelMedium: const TextStyle(
