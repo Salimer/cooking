@@ -24,6 +24,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/emailInput.svg
   String get emailInput => 'assets/icons/emailInput.svg';
 
+  /// File path: assets/icons/favourite.svg
+  String get favourite => 'assets/icons/favourite.svg';
+
   /// File path: assets/icons/logo.svg
   String get logo => 'assets/icons/logo.svg';
 
@@ -54,6 +57,7 @@ class $AssetsIconsGen {
         drawerIcon,
         editEmailIcon,
         emailInput,
+        favourite,
         logo,
         notificationsIcon,
         otpMessageIcon,
