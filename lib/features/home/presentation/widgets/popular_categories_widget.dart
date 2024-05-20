@@ -1,4 +1,5 @@
 import 'package:cooking/core/constants/constants.dart';
+import 'package:cooking/core/extensions/extensions.dart';
 import 'package:cooking/features/home/data/fake.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +35,7 @@ class PopularCategoriesWidget extends StatelessWidget {
                   ),
                   Text(
                     categories[index]['name']!,
-                    style: Theme.of(context).textTheme.labelMedium,
+                    style: context.textTheme.labelMedium,
                   )
                 ],
               ),
