@@ -12,6 +12,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       drawer: const Drawer(),
       body: Stack(
         children: [
@@ -69,7 +70,6 @@ class HomeView extends StatelessWidget {
               ),
               Expanded(
                 child: Container(
-                  color: AppColors.homeBackground,
                   child: const SingleChildScrollView(
                     child: Column(
                       children: [
