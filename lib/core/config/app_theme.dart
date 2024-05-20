@@ -9,14 +9,25 @@ class AppTheme {
   static ThemeData _lightTheme() {
     final theme = ThemeData.light();
     return theme.copyWith(
-      scaffoldBackgroundColor: Neutral.grey4,
-      textTheme: theme.textTheme.apply(fontFamily: FontFamily.iBMPlexSansArabic),
-    );
+        scaffoldBackgroundColor: orange[50],
+        colorScheme: const ColorScheme.light(),
+        textTheme: theme.textTheme
+            .copyWith(
+              labelMedium: const TextStyle(
+                color: Neutral.grey1,
+              ),
+            )
+            .apply(fontFamily: FontFamily.iBMPlexSansArabic));
   }
 
   static ThemeData _darkTheme() {
     final theme = ThemeData.dark();
-    return theme.copyWith();
+    return theme.copyWith(
+      scaffoldBackgroundColor: Colors.black,
+      colorScheme: const ColorScheme.dark(),
+      textTheme: theme.textTheme
+          .copyWith(labelMedium: const TextStyle(color: Neutral.white))
+          .apply(fontFamily: FontFamily.iBMPlexSansArabic),
+    );
   }
 }
-
