@@ -1,8 +1,8 @@
 import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
+import 'package:cooking/core/extensions/extensions.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:cooking/gen/assets.gen.dart';
 
@@ -12,7 +12,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      backgroundColor: context.theme.scaffoldBackgroundColor,
       drawer: const Drawer(),
       body: Stack(
         children: [
@@ -68,19 +68,16 @@ class HomeView extends StatelessWidget {
                   ],
                 ),
               ),
-              Expanded(
-                child: Container(
-                  child: const SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        SizedBox(height: 40),
-                        SubtitlesWidget(subtitle: 'فئات شعبية'),
-                        PopularCategoriesWidget(),
-                        SubtitlesWidget(subtitle: 'الأكثر مشاهدة'),
-                        RecipeCardWidget(),
-                        SizedBox(height: 0)
-                      ],
-                    ),
+              const Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      SizedBox(height: 40),
+                      SubtitlesWidget(subtitle: 'فئات شعبية'),
+                      PopularCategoriesWidget(),
+                      SubtitlesWidget(subtitle: 'الأكثر مشاهدة'),
+                      RecipeCardWidget(),
+                    ],
                   ),
                 ),
               ),
