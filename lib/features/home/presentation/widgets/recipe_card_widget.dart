@@ -3,6 +3,7 @@ import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 import 'recipe_card_label_widget.dart';
+
 class RecipeCardWidget extends StatelessWidget {
   const RecipeCardWidget({
     super.key,
@@ -11,19 +12,41 @@ class RecipeCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Neutral.grey5,
       margin: EdgeInsets.symmetric(horizontal: homeScreenPadding(context)),
       elevation: 0,
       child: Column(
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: AspectRatio(
-              aspectRatio: 3/1.5,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: Assets.images.recipe
-                    .image(fit: BoxFit.cover),
-              ),
+            child: Stack(
+              children: [
+                AspectRatio(
+                  aspectRatio: 3 / 1.5,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Assets.images.recipe.image(fit: BoxFit.cover),
+                  ),
+                ),
+                Positioned(
+                  bottom: 0,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Neutral.grey5
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(Icons.heart_broken),
+                          Text('حفظ الوجبة')
+                        ],
+                      ),
+                    ),
+                  ),
+                )
+              ],
             ),
           ),
           Padding(
