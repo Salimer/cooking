@@ -12,8 +12,17 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/arrowRight.svg
+  String get arrowRight => 'assets/icons/arrowRight.svg';
+
   /// File path: assets/icons/clockIcon.svg
   String get clockIcon => 'assets/icons/clockIcon.svg';
+
+  /// File path: assets/icons/diamond.svg
+  String get diamond => 'assets/icons/diamond.svg';
+
+  /// File path: assets/icons/diamondFilled.svg
+  String get diamondFilled => 'assets/icons/diamondFilled.svg';
 
   /// File path: assets/icons/drawerIcon.svg
   String get drawerIcon => 'assets/icons/drawerIcon.svg';
@@ -26,6 +35,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/favourite.svg
   String get favourite => 'assets/icons/favourite.svg';
+
+  /// File path: assets/icons/favouriteWhite.svg
+  String get favouriteWhite => 'assets/icons/favouriteWhite.svg';
 
   /// File path: assets/icons/logo.svg
   String get logo => 'assets/icons/logo.svg';
@@ -53,11 +65,15 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<String> get values => [
+        arrowRight,
         clockIcon,
+        diamond,
+        diamondFilled,
         drawerIcon,
         editEmailIcon,
         emailInput,
         favourite,
+        favouriteWhite,
         logo,
         notificationsIcon,
         otpMessageIcon,
@@ -80,6 +96,9 @@ class $AssetsImagesGen {
   AssetGenImage get splashBackground =>
       const AssetGenImage('assets/images/SplashBackground.png');
 
+  /// File path: assets/images/avatar.png
+  AssetGenImage get avatar => const AssetGenImage('assets/images/avatar.png');
+
   /// File path: assets/images/homeCover.png
   AssetGenImage get homeCover =>
       const AssetGenImage('assets/images/homeCover.png');
@@ -87,9 +106,12 @@ class $AssetsImagesGen {
   /// File path: assets/images/recipe.png
   AssetGenImage get recipe => const AssetGenImage('assets/images/recipe.png');
 
+  /// File path: assets/images/recipe2.png
+  AssetGenImage get recipe2 => const AssetGenImage('assets/images/recipe2.png');
+
   /// List of all assets
   List<AssetGenImage> get values =>
-      [authBackground, splashBackground, homeCover, recipe];
+      [authBackground, splashBackground, avatar, homeCover, recipe, recipe2];
 }
 
 class Assets {
