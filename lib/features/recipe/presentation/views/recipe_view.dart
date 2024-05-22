@@ -120,10 +120,13 @@ class RecipeView extends StatelessWidget {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5)
-                        ),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 20, vertical: 5)),
                         onPressed: () {},
-                        child: const Text('متابعة', style: TextStyle(color: Neutral.white),),
+                        child: const Text(
+                          'متابعة',
+                          style: TextStyle(color: Neutral.white),
+                        ),
                       )
                     ],
                   ),
@@ -134,23 +137,31 @@ class RecipeView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       RecipeCardLabelWidget(
-                      greyText: 'وقت الطهي',
-                      redText: "دقائق",
-                      duration: 10,
-                      icon: Assets.icons.clockIcon),
-                  const SizedBox(width: 10),
-                  RecipeCardLabelWidget(
-                      greyText: 'تخدمهم',
-                      redText: 'أشخاص',
-                      duration: 4,
-                      icon: Assets.icons.userIcon),
-                  const SizedBox(width: 10),
-                  RecipeCardLabelWidget(
-                    greyText: "وقت التحضير",
-                    duration: 60,
-                    redText: 'دقيقة',
-                    icon: Assets.icons.clockIcon,
-                  )
+                        greyText: 'وقت الطهي',
+                        redText: "دقائق",
+                        duration: 10,
+                        icon: Assets.icons.clockIcon,
+                        pad: 20,
+                        backgroundColor: orange[50],
+                      ),
+                      const SizedBox(width: 10),
+                      RecipeCardLabelWidget(
+                        greyText: 'تخدمهم',
+                        redText: 'أشخاص',
+                        duration: 4,
+                        icon: Assets.icons.userIcon,
+                        pad: 20,
+                        backgroundColor: orange[50],
+                      ),
+                      const SizedBox(width: 10),
+                      RecipeCardLabelWidget(
+                        greyText: "وقت التحضير",
+                        duration: 60,
+                        redText: 'دقيقة',
+                        icon: Assets.icons.clockIcon,
+                        pad: 20,
+                        backgroundColor: orange[50],
+                      )
                     ],
                   ),
                 )
