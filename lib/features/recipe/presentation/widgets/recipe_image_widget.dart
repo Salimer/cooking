@@ -1,5 +1,6 @@
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/core/extensions/extensions.dart';
+import 'package:cooking/core/widgets/widgets.dart';
 import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -27,28 +28,8 @@ class RecipeImageWidget extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Neutral.grey5,
-                  ),
-                  child: SvgPicture.asset(
-                    Assets.icons.arrowRight,
-                    width: 25,
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: const BoxDecoration(
-                      shape: BoxShape.circle, color: Neutral.grey5),
-                  child: SvgPicture.asset(
-                    Assets.icons.favouriteWhite,
-                    width: 25,
-                    colorFilter:
-                        const ColorFilter.mode(Neutral.grey2, BlendMode.srcIn),
-                  ),
-                )
+                AppbarButtonWidget(icon: Assets.icons.arrowRight),
+                AppbarButtonWidget(icon: Assets.icons.favouriteWhite),
               ],
             ),
           ),
@@ -57,3 +38,5 @@ class RecipeImageWidget extends StatelessWidget {
     );
   }
 }
+
+
