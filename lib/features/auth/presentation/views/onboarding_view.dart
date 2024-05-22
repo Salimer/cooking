@@ -16,7 +16,7 @@ class OnboardingView extends StatelessWidget {
           SingleChildScrollView(
             child: Container(
               padding:
-                  EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
+                  EdgeInsets.symmetric(horizontal: authScreensPadding),
               child: Column(
                 children: [
                   SizedBox(height: screenH(context) * 0.35),
