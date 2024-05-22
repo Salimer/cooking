@@ -2,7 +2,6 @@ import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/features/recipe/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-
 class RecipeView extends StatelessWidget {
   const RecipeView({super.key});
 
@@ -28,8 +27,7 @@ class RecipeView extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 20),
                   child: RecipeDurationAndCapacityWidget(),
-                ), 
-                
+                ),
               ],
             ),
           )
@@ -38,4 +36,3 @@ class RecipeView extends StatelessWidget {
     );
   }
 }
-
