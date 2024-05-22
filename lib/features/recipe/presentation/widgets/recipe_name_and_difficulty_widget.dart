@@ -3,7 +3,6 @@ import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-
 class RecipeNameAndDifficultyWidget extends StatelessWidget {
   const RecipeNameAndDifficultyWidget({
     super.key,
@@ -18,8 +17,7 @@ class RecipeNameAndDifficultyWidget extends StatelessWidget {
         Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('درجة الصعوبة',
-                style: TextStyles.smallRegular),
+            const Text('درجة الصعوبة', style: TextStyles.smallRegular),
             const SizedBox(height: 5),
             Row(
               children: [
