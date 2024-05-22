@@ -6,5 +6,4 @@ export 'liked_recipes_widget.dart';
 export 'search_bar_widget.dart';
 export 'carousel_box_widget.dart';
 export 'infinite_carousel_widget.dart';
-export 'recipe_card_label_widget.dart';
 export 'recipe_card_widget.dart';
