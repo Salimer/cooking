@@ -4,7 +4,6 @@ import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-
 class RecipeCardWidget extends StatelessWidget {
   const RecipeCardWidget({
     super.key,
@@ -13,9 +12,7 @@ class RecipeCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(24)
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
       color: Neutral.grey5,
       margin: EdgeInsets.symmetric(horizontal: homeScreenPadding(context)),
       elevation: 0,
@@ -35,22 +32,26 @@ class RecipeCardWidget extends StatelessWidget {
                 Positioned(
                   bottom: 0,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(0, 0),
-                        backgroundColor: Neutral.grey5,
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        )
-                      ),
+                          minimumSize: const Size(0, 0),
+                          backgroundColor: Neutral.grey5,
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 10, vertical: 5),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8))),
                       child: Row(
                         children: [
                           SvgPicture.asset(Assets.icons.favourite),
                           const SizedBox(width: 3),
-                          Text('حفظ الوجبة', style: TextStyles.smallBold.copyWith(color: orange[400]),)
+                          Text(
+                            'حفظ الوجبة',
+                            style: TextStyles.smallBold
+                                .copyWith(color: orange[400]),
+                          )
                         ],
                       ),
                     ),
