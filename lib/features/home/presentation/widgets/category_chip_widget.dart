@@ -22,8 +22,8 @@ class CategoryChipWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                  padding:
-                      const EdgeInsets.only(bottom: 5.5, left: 6.5, top: 3, right: 3),
+                  padding: const EdgeInsets.only(
+                      bottom: 5.5, left: 6.5, top: 3, right: 3),
                   decoration: const BoxDecoration(
                       color: Colors.white, shape: BoxShape.circle),
                   child: Text(icon, style: const TextStyle(fontSize: 16))),
