@@ -10,7 +10,7 @@ class SubtitlesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-          vertical: 15, horizontal: homeScreenPadding(context)),
+          vertical: 15, horizontal: homeScreenPadding),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
