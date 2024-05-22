@@ -45,8 +45,8 @@ class RecipeImageWidget extends StatelessWidget {
                   child: SvgPicture.asset(
                     Assets.icons.favouriteWhite,
                     width: 25,
-                    colorFilter: const ColorFilter.mode(
-                        Neutral.grey2, BlendMode.srcIn),
+                    colorFilter:
+                        const ColorFilter.mode(Neutral.grey2, BlendMode.srcIn),
                   ),
                 )
               ],
