@@ -38,7 +38,8 @@ class HomeView extends StatelessWidget {
                     width: screenW(context),
                     padding: const EdgeInsets.only(right: 20, left: 90),
                     child: Text('البحث عن أفضل الوصفات للطبخ',
-                        style: TextStyles.h4Bold.copyWith(color: Neutral.black)),
+                        style:
+                            TextStyles.h4Bold.copyWith(color: Neutral.black)),
                   ),
                   Container(
                     color: Neutral.white,
