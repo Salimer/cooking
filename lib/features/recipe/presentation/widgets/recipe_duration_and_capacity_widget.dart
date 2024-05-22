@@ -3,7 +3,6 @@ import 'package:cooking/core/widgets/widgets.dart';
 import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
-
 class RecipeDurationAndCapacityWidget extends StatelessWidget {
   const RecipeDurationAndCapacityWidget({
     super.key,
@@ -44,4 +43,3 @@ class RecipeDurationAndCapacityWidget extends StatelessWidget {
     );
   }
 }
-
