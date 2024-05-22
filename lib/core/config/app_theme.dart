@@ -11,21 +11,15 @@ class AppTheme {
     return theme.copyWith(
       scaffoldBackgroundColor: orange[50],
       colorScheme: ColorScheme.light(primary: red[500]!),
-      textTheme: theme.textTheme
-          .copyWith(
-            labelMedium: const TextStyle(
-              color: Neutral.grey1,
-            ),
-          )
-          .apply(fontFamily: FontFamily.iBMPlexSansArabic),
-          elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: red[500],
-              minimumSize: const Size(0,0),
-              padding: const EdgeInsets.all(0),
-              elevation: 0
-            )
-          )
+      textTheme:
+          theme.textTheme.apply(fontFamily: FontFamily.iBMPlexSansArabic),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+            backgroundColor: red[500],
+            minimumSize: const Size(0, 0),
+            padding: const EdgeInsets.all(0),
+            elevation: 0),
+      ),
     );
   }
 
