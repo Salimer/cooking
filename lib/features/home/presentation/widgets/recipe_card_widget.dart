@@ -14,7 +14,7 @@ class RecipeCardWidget extends StatelessWidget {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
       color: Neutral.grey5,
-      margin: EdgeInsets.symmetric(horizontal: homeScreenPadding(context)),
+      margin: EdgeInsets.symmetric(horizontal: homeScreenPadding),
       elevation: 0,
       child: Column(
         children: [
