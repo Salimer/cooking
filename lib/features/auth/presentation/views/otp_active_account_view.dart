@@ -16,7 +16,7 @@ class OtpActiveAccountView extends StatelessWidget {
           SingleChildScrollView(
             child: Padding(
               padding:
-                  EdgeInsets.symmetric(horizontal: authScreensPadding(context)),
+                  EdgeInsets.symmetric(horizontal: authScreensPadding),
               child: Column(
                 children: [
                   SizedBox(height: screenH(context) * 0.20),
