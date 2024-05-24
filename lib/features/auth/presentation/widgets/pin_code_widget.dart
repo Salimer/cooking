@@ -16,7 +16,7 @@ class PinCodeWidget extends StatelessWidget {
         fieldHeight: 70,
         fieldWidth: 70,
         shape: PinCodeFieldShape.box,
-        borderRadius: BorderRadius.circular(24),
+
         // borderWidth: 10,
         inactiveColor: orange[200],
         activeColor: orange[500],
