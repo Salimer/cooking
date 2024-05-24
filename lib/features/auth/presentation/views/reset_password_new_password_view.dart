@@ -48,7 +48,6 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
                     ),
                     const SizedBox(height: 40),
                     CustomElevatedButton(
-                      borderRadius: BorderRadius.circular(24),
                       onPressed: _showDialog,
                       text: 'تأكيد',
                     ),
