@@ -1,6 +1,6 @@
-import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/core/extensions/extensions.dart';
+import 'package:cooking/core/widgets/widgets.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking/gen/assets.gen.dart';
