@@ -60,10 +60,7 @@ class RegisterView extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 40),
-                    CustomElevatedButton(
-                        borderRadius: BorderRadius.circular(24),
-                        onPressed: () {},
-                        text: "إنشاء حساب"),
+                    CustomElevatedButton(onPressed: () {}, text: "إنشاء حساب"),
                     const SizedBox(height: 20),
                     const AuthBottomActionWidget(
                       redText: 'إنشاء حساب',
