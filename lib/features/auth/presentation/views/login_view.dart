@@ -17,8 +17,7 @@ class LoginView extends StatelessWidget {
           const AuthBackgroundWidget(),
           SingleChildScrollView(
             child: Padding(
-              padding:
-                  EdgeInsets.symmetric(horizontal: authScreensPadding),
+              padding: EdgeInsets.symmetric(horizontal: authScreensPadding),
               child: Form(
                 key: formKey,
                 child: Column(
@@ -27,12 +26,12 @@ class LoginView extends StatelessWidget {
                     LogoAndTitleWidget(
                       iconPath: Assets.icons.logo,
                     ),
-                    SizedBox(height: screenH(context) / 14),
+                    SizedBox(height: context.screenHeight / 14),
                     FormInputWidget(
                       iconName: Assets.icons.emailInput,
                       placeholder: 'البريد اللإلكتروني',
                     ),
-                    SizedBox(height: screenH(context) / 50),
+                    SizedBox(height: context.screenHeight / 50),
                     FormInputWidget(
                         iconName: Assets.icons.passwordInput,
                         placeholder: 'كلمة المرور'),
