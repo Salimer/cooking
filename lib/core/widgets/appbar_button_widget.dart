@@ -10,6 +10,9 @@ class AppbarButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.transparent,
+      ),
       onPressed: () {},
       child: Container(
         padding: const EdgeInsets.all(8),
