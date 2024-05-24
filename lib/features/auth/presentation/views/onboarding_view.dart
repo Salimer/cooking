@@ -24,10 +24,7 @@ class OnboardingView extends StatelessWidget {
                     iconPath: Assets.icons.logo,
                   ),
                   SizedBox(height: context.screenHeight / 12),
-                  CustomElevatedButton(
-                      borderRadius: BorderRadius.circular(24),
-                      onPressed: () {},
-                      text: 'إنشاء حساب'),
+                  CustomElevatedButton(onPressed: () {}, text: 'إنشاء حساب'),
                   SizedBox(height: context.screenHeight / 40.6),
                   SizedBox(
                     width: double.infinity,
@@ -36,9 +33,7 @@ class OnboardingView extends StatelessWidget {
                       onPressed: () {},
                       style: OutlinedButton.styleFrom(
                         side: BorderSide(color: orange[500]!),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(24),
-                        ),
+                        shape: RoundedRectangleBorder(),
                       ),
                       child: Text(
                         'تخطي',
