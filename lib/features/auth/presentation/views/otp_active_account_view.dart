@@ -1,5 +1,6 @@
 import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
+import 'package:cooking/core/extensions/extensions.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking/gen/assets.gen.dart';
@@ -15,11 +16,10 @@ class OtpActiveAccountView extends StatelessWidget {
           const AuthBackgroundWidget(),
           SingleChildScrollView(
             child: Padding(
-              padding:
-                  EdgeInsets.symmetric(horizontal: authScreensPadding),
+              padding: EdgeInsets.symmetric(horizontal: authScreensPadding),
               child: Column(
                 children: [
-                  SizedBox(height: screenH(context) * 0.20),
+                  SizedBox(height: context.screenHeight * 0.20),
                   LogoAndTitleWidget(
                       iconPath: Assets.icons.otpMessageIcon,
                       iconTitleGap: 30,
