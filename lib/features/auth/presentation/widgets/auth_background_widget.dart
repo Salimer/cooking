@@ -1,4 +1,4 @@
-import 'package:cooking/core/config/config.dart';
+import 'package:cooking/core/extensions/extensions.dart';
 import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,7 @@ class AuthBackgroundWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.asset(
       Assets.images.authBackground.path,
-      width: screenW(context),
+      width: context.screenWidth,
       fit: BoxFit.cover,
       alignment: Alignment.topCenter,
     );
