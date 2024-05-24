@@ -9,7 +9,7 @@ class CustomElevatedButton extends StatelessWidget {
 
   const CustomElevatedButton({
     super.key,
-    required this.onPressed,
+    this.onPressed,
     required this.text,
     this.borderRadius,
     this.width = double.infinity,
@@ -17,7 +17,7 @@ class CustomElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final borderRadius = this.borderRadius ?? BorderRadius.circular(0);
+    final borderRadius = this.borderRadius ?? BorderRadius.circular(10);
     return Container(
       width: width,
       height: 60,
