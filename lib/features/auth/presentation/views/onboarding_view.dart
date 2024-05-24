@@ -1,5 +1,6 @@
 import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
+import 'package:cooking/core/extensions/extensions.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
@@ -15,20 +16,19 @@ class OnboardingView extends StatelessWidget {
           const AuthBackgroundWidget(),
           SingleChildScrollView(
             child: Container(
-              padding:
-                  EdgeInsets.symmetric(horizontal: authScreensPadding),
+              padding: EdgeInsets.symmetric(horizontal: authScreensPadding),
               child: Column(
                 children: [
-                  SizedBox(height: screenH(context) * 0.35),
+                  SizedBox(height: context.screenHeight * 0.35),
                   LogoAndTitleWidget(
                     iconPath: Assets.icons.logo,
                   ),
-                  SizedBox(height: screenH(context) / 12),
+                  SizedBox(height: context.screenHeight / 12),
                   CustomElevatedButton(
                       borderRadius: BorderRadius.circular(24),
                       onPressed: () {},
                       text: 'إنشاء حساب'),
-                  SizedBox(height: screenH(context) / 40.6),
+                  SizedBox(height: context.screenHeight / 40.6),
                   SizedBox(
                     width: double.infinity,
                     height: 60,
@@ -46,12 +46,12 @@ class OnboardingView extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: screenH(context) / 15),
+                  SizedBox(height: context.screenHeight / 15),
                   const AuthBottomActionWidget(
                     redText: "تسجيل الدخول",
                     whiteText: "هل لديك حساب؟",
                   ),
-                  SizedBox(height: screenH(context) / 19.3333)
+                  SizedBox(height: context.screenHeight / 19.3333)
                 ],
               ),
             ),
