@@ -54,7 +54,6 @@ class LoginView extends StatelessWidget {
                     ),
                     const SizedBox(height: 40),
                     CustomElevatedButton(
-                        borderRadius: BorderRadius.circular(24),
                         onPressed: () {},
                         text: 'تسجيل الدخول'),
                     const SizedBox(height: 20),
