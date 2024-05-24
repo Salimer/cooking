@@ -1,4 +1,4 @@
-import 'package:cooking/core/config/config.dart';
+import 'package:cooking/core/extensions/context_extension.dart';
 import 'package:cooking/features/home/data/fake.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +12,7 @@ class InfiniteCarouselWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InfiniteCarousel.builder(
-      center: phoneOrientation(context) == Orientation.landscape ? false : true,
+      center: context.screenOrientation == Orientation.landscape ? false : true,
       loop: false,
       itemCount: categories.length,
       itemExtent: 327,
