@@ -19,7 +19,7 @@ class HomeView extends StatelessWidget {
           Column(
             children: [
               SizedBox(
-                width: screenW(context),
+                width: context.screenWidth,
                 child: Stack(
                   children: [
                     SizedBox(
