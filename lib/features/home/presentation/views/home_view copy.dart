@@ -1,5 +1,6 @@
 import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
+import 'package:cooking/core/extensions/extensions.dart';
 import 'package:cooking/features/home/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -35,7 +36,7 @@ class HomeView extends StatelessWidget {
                   Container(
                     color: Neutral.grey4,
                     height: 120,
-                    width: screenW(context),
+                    width: context.screenWidth,
                     padding: const EdgeInsets.only(right: 20, left: 90),
                     child: Text('البحث عن أفضل الوصفات للطبخ',
                         style:
