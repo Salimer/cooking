@@ -1,5 +1,6 @@
 import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
+import 'package:cooking/core/extensions/extensions.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking/gen/assets.gen.dart';
@@ -16,13 +17,12 @@ class ResetPasswordEnterEmailView extends StatelessWidget {
           const AuthBackgroundWidget(),
           SingleChildScrollView(
             child: Padding(
-              padding:
-                  EdgeInsets.symmetric(horizontal: authScreensPadding),
+              padding: EdgeInsets.symmetric(horizontal: authScreensPadding),
               child: Form(
                 key: formKey,
                 child: Column(
                   children: [
-                    SizedBox(height: screenH(context) * 0.30),
+                    SizedBox(height: context.screenHeight * 0.30),
                     LogoAndTitleWidget(
                         iconPath: Assets.icons.logo,
                         title: 'استعادة كلمة المرور',
