@@ -16,6 +16,7 @@ class AppTheme {
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
             backgroundColor: red[500],
+            foregroundColor: Neutral.white,
             minimumSize: const Size(0, 0),
             padding: const EdgeInsets.all(0),
             elevation: 0),
