@@ -1,4 +1,4 @@
-import 'package:cooking/core/config/config.dart';
+import 'package:cooking/core/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -11,7 +11,7 @@ class AppLogoWidget extends StatelessWidget {
     return SvgPicture.asset(
       iconPath,
       semanticsLabel: 'App Logo',
-      height: screenH(context) / 6.6557377,
+      height: context.screenHeight / 6.6557377,
     );
   }
 }
