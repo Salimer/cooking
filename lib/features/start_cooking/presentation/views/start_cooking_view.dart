@@ -1,4 +1,3 @@
-import 'package:cooking/core/constants/app_padds.dart';
 import 'package:cooking/gen/assets.gen.dart';
 import 'package:cooking/core/constants/constants.dart';
 import 'package:cooking/core/widgets/widgets.dart';
