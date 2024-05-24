@@ -1,5 +1,5 @@
-import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
+import 'package:cooking/core/extensions/context_extension.dart';
 import 'package:cooking/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -18,7 +18,7 @@ class SearchBarWidget extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(
           horizontal:
-              phoneOrientation(context) == Orientation.landscape ? 80 : 25,
+              context.screenOrientation == Orientation.landscape ? 80 : 25,
         ),
         child: Container(
           decoration: BoxDecoration(
