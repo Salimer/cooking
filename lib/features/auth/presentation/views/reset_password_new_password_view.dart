@@ -1,5 +1,6 @@
 import 'package:cooking/core/config/config.dart';
 import 'package:cooking/core/constants/constants.dart';
+import 'package:cooking/core/extensions/extensions.dart';
 import 'package:cooking/features/auth/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:cooking/gen/assets.gen.dart';
@@ -25,13 +26,12 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
           const AuthBackgroundWidget(),
           SingleChildScrollView(
             child: Padding(
-              padding:
-                  EdgeInsets.symmetric(horizontal: authScreensPadding),
+              padding: EdgeInsets.symmetric(horizontal: authScreensPadding),
               child: Form(
                 key: formKey,
                 child: Column(
                   children: [
-                    SizedBox(height: screenH(context) * 0.25),
+                    SizedBox(height: context.screenHeight * 0.25),
                     LogoAndTitleWidget(
                         iconPath: Assets.icons.logo,
                         title: 'استعادة كلمة المرور',
@@ -41,7 +41,7 @@ class ResetPasswordNewPasswordView extends StatelessWidget {
                       iconName: Assets.icons.passwordInput,
                       placeholder: 'كلمة المرور الجديدة',
                     ),
-                    SizedBox(height: screenH(context) / 50),
+                    SizedBox(height: context.screenHeight / 50),
                     FormInputWidget(
                       iconName: Assets.icons.passwordInput,
                       placeholder: 'تأكيد كلمة المرور الجديدة',
