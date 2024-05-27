@@ -14,7 +14,7 @@ class RecipeView extends StatelessWidget {
           Container(
             color: Neutral.grey5,
             padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: const Column(
+            child: Column(
               children: [
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 13),
@@ -28,9 +28,11 @@ class RecipeView extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical: 20),
                   child: RecipeDurationAndCapacityWidget(),
                 ),
+                // CustomTabBarWidget should fit within the available space
+                Expanded(child: CustomTabBarWidget()),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

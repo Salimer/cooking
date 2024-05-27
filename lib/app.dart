@@ -17,7 +17,7 @@ class App extends StatelessWidget {
       darkTheme: AppTheme.darkTheme,
       home: const Directionality(
         textDirection: TextDirection.rtl,
-        child: StartCookingView(),
+        child: RecipeView(),
       ),
     );
   }
